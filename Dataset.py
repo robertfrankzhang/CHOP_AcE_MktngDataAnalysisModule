@@ -111,9 +111,13 @@ class Dataset:
             l = []
             other = 0
             for r in ranked:
+                didAppend = False
                 for inst in vals:
                     if inst[0] == r:
                         l.append(inst[2])
+                        didAppend = True
+                if not didAppend:
+                    l.append(0)
             for inst in vals:
                 if not (inst[0] in ranked) and not np.isnan(inst[2]):
                     other += inst[2]
@@ -173,9 +177,13 @@ class Dataset:
             l = []
             other = 0
             for r in ranked:
+                didAppend = False
                 for work in vals:
                     if work[0] == r:
                         l.append(work[1])
+                        didAppend = True
+                if not didAppend:
+                    l.append(0)
             for work in vals:
                 if not (work[0] in ranked) and not(np.isnan(work[1])):
                     other += work[1]
@@ -263,9 +271,13 @@ class Dataset:
             l = []
             other = 0
             for r in ranked:
+                didAppend = False
                 for work in vals:
                     if work[0] == r:
                         l.append(work[1])
+                        didAppend = True
+                if not didAppend:
+                    l.append(0)
             for work in vals:
                 if not (work[0] in ranked) and not (np.isnan(work[1])):
                     other += work[1]
