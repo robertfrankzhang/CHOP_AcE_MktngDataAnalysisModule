@@ -12,12 +12,12 @@ class Dataset:
         #Get month data
         self.months = {}
 
-        monthNames = ["00Oct19","01Nov19","02Dec19","03Jan20","04Feb20","05Mar20"] ##Needs to be edited every month
+        self.monthNames = ["00Oct19","01Nov19","02Dec19","03Jan20","04Feb20","05Mar20"] ##Needs to be edited every month
 
-        for m in monthNames:
+        for m in self.monthNames:
             self.months[m] = {}
 
-        for name in monthNames:
+        for name in self.monthNames:
             #Referral Data
             r = pd.read_csv(name+"/Referrers.csv")
             self.months[name]["Referrals"] = r.values
