@@ -28,70 +28,61 @@ class GUIModule:
             l.append(row[colIndex])
         return l
 
-    def plotCumulativeDownloadsOverTime(self):
-        plt.plot(self.times, self.cumulativeFreq(self.d.totalDownloadsOverTime()))
-        plt.ylabel('Cumulative Downloads')
+    def plotElementsOverTimeGeneral(self,a,cumulative):
+        if cumulative:
+            c = []
+            for i in range(len(a[0])):
+                if i == 0:
+                    c = self.cumulativeFreq(self.column(a[1], i))
+                else:
+                    c += self.cumulativeFreq(self.column(a[1], i))
+                plt.plot(self.times, c, label=a[0][i])
+        else:
+            c = []
+            for i in range(len(a[0])):
+                c = self.column(a[1], i)
+                plt.plot(self.times, c, label=a[0][i])
+        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
+        plt.legend()
+        plt.show()
+
+    def plotDownloadsOverTime(self,cumulative=False):
+        if cumulative:
+            plt.plot(self.times, self.cumulativeFreq(self.d.totalDownloadsOverTime()))
+            plt.ylabel('Cumulative Downloads')
+        else:
+            plt.plot(self.times, self.d.totalDownloadsOverTime())
+            plt.ylabel('NonCumulative Downloads')
         plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
         plt.show()
 
-    def plotNoncumulativeDownloadsOverTime(self):
-        plt.plot(self.times, self.d.totalDownloadsOverTime())
-        plt.ylabel('NonCumulative Downloads')
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.show()
-
-    def plotDownloadsByCountryOverTime(self,cutoff=10):
+    def plotDownloadsByCountryOverTime(self,cutoff=10,cumulative=False):
         countries = self.d.totalDownloadsByCountryOverTime(cutoff)
-        c = []
-        for i in range(len(countries[0])):
-            if i == 0:
-                c = self.cumulativeFreq(self.column(countries[1], i))
-            else:
-                c += self.cumulativeFreq(self.column(countries[1], i))
-            plt.plot(self.times, c, label=countries[0][i])
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.legend()
-        plt.show()
+        self.plotElementsOverTimeGeneral(countries,cumulative)
 
-    def plotDownloadsByInstitutionOverTime(self,cutoff=10):
+    def plotDownloadsByInstitutionOverTime(self,cutoff=10,cumulative=False):
         institutions = self.d.totalDownloadsByInstitutionOverTime(cutoff)
-        c = []
-        for i in range(len(institutions[0])):
-            if i == 0:
-                c = self.cumulativeFreq(self.column(institutions[1], i))
-            else:
-                c += self.cumulativeFreq(self.column(institutions[1], i))
-            plt.plot(self.times, c, label=institutions[0][i])
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.legend()
-        plt.show()
+        self.plotElementsOverTimeGeneral(institutions,cumulative)
 
-    def plotDownloadsByInstitutionTypeOverTime(self):
+    def plotDownloadsByAffiliatesOverTime(self,normalized=False,cumulative=False):
+        institutions = self.d.totalDownloadsByCHOPAffiliatesOverTime(normalized)
+        self.plotElementsOverTimeGeneral(institutions,cumulative)
+
+    def plotDownloadsByAffiliatesOverTimeEducational(self,normalized=False,cumulative=False):
+        institutions = self.d.totalDownloadsByCHOPAffiliatesOverTimeEducation(normalized)
+        self.plotElementsOverTimeGeneral(institutions,cumulative)
+
+    def plotInstNonInstDownloadsOverTime(self,cumulative=False):
+        institutions = self.d.institutionalAndNoninstutionalDownloadsOverTime()
+        self.plotElementsOverTimeGeneral(institutions,cumulative)
+
+    def plotDownloadsByInstitutionTypeOverTime(self,cumulative=False):
         institutions = self.d.totalDownloadsByInstitutionTypeOverTime()
-        c = []
-        for i in range(len(institutions[0])):
-            if i == 0:
-                c = self.cumulativeFreq(self.column(institutions[1], i))
-            else:
-                c += self.cumulativeFreq(self.column(institutions[1], i))
-            plt.plot(self.times, c, label=institutions[0][i])
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.legend()
-        plt.show()
+        self.plotElementsOverTimeGeneral(institutions,cumulative)
 
-    def plotDownloadsByArticleOverTime(self,cutoff=10):
+    def plotDownloadsByArticleOverTime(self,cutoff=10,cumulative=False):
         articles = self.d.totalDownloadsByArticleOverTime(cutoff)
-
-        c = []
-        for i in range(len(articles[0])):
-            if i == 0:
-                c = self.cumulativeFreq(self.column(articles[1], i))
-            else:
-                c += self.cumulativeFreq(self.column(articles[1], i))
-            plt.plot(self.times, c, label=articles[0][i])
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.legend()
-        plt.show()
+        self.plotElementsOverTimeGeneral(articles,cumulative)
 
     def plotMostDownloadedArticles(self,cutoff=10):
         articles = self.d.totalDownloadsByArticle(cutoff)
@@ -125,19 +116,9 @@ class GUIModule:
         for a in articles:
             print(a)
 
-    def plotDownloadsByReferralSourceOverTime(self,cutoff=10):
+    def plotDownloadsByReferralSourceOverTime(self,cutoff=10,cumulative=False):
         sources = self.d.referralsOverTime()
-
-        c = []
-        for i in range(len(sources[0])):
-            if i == 0:
-                c = self.cumulativeFreq(self.column(sources[1], i))
-            else:
-                c += self.cumulativeFreq(self.column(sources[1], i))
-            plt.plot(self.times, c, label=sources[0][i])
-        plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
-        plt.legend()
-        plt.show()
+        self.plotElementsOverTimeGeneral(sources,cumulative)
 
     def printMostDownloadedArticlesByInstitutionType(self,type):
         education = self.d.mostDownloadedArticlesByInstitutionType(type)

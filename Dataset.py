@@ -126,6 +126,99 @@ class Dataset:
         ranked.append("Other")
         return (ranked,ret)
 
+    def totalDownloadsByCHOPAffiliatesOverTime(self,normalized=False): #Return 2D array of affiliate downloads vs all other downloads
+        affiliates = ["The Children's Hospital of Philadelphia","Penn Medicine","University of Pennsylvania"]
+        mValues = []
+        counter = 0
+        for month,value in self.months.items():
+            vals = value['Inst']["0FULL"]
+            totals = {}
+            total = 0
+            for inst in vals:
+                if inst[0] in affiliates:
+                    if inst[0] in totals and not np.isnan(inst[2]):
+                        totals[inst[0]] += inst[2]
+                        total += inst[2]
+                    else:
+                        totals[inst[0]] = inst[2]
+                        total += inst[2]
+            n = []
+            for i in range(len(affiliates)+1):
+                n.append(None)
+
+            for k,v in totals.items():
+                for i in range(len(affiliates)):
+                    if k == affiliates[i]:
+                        if normalized:
+                            n[i] = v/self.totalDownloads[counter]
+                        else:
+                            n[i] = v
+            if not normalized:
+                n[len(n)-1] = self.totalDownloads[counter] - total
+            else:
+                n[len(n) - 1] = (self.totalDownloads[counter] - total)/self.totalDownloads[counter]
+            counter+=1
+
+            mValues.append(n)
+        affiliates.append("Other")
+        return (affiliates,mValues)
+
+    def totalDownloadsByCHOPAffiliatesOverTimeEducation(self,normalized=False): #Return 2D array of affiliate downloads vs all other educational downloads
+        affiliates = ["The Children's Hospital of Philadelphia","Penn Medicine","University of Pennsylvania"]
+        mValues = []
+        counter = 0
+        for month,value in self.months.items():
+            vals = value['Inst']["0FULL"]
+            totals = {}
+            total = 0
+            totalEducational = 0
+            for inst in vals:
+                if inst[1] == "Education":
+                    totalEducational += inst[2]
+                if inst[0] in affiliates and not np.isnan(inst[2]):
+                    if inst[0] in totals:
+                        totals[inst[0]] += inst[2]
+                        total += inst[2]
+                    else:
+                        totals[inst[0]] = inst[2]
+                        total += inst[2]
+            n = []
+            for i in range(len(affiliates) + 1):
+                n.append(None)
+
+            for k, v in totals.items():
+                for i in range(len(affiliates)):
+                    if k == affiliates[i]:
+                        if normalized:
+                            n[i] = v/totalEducational
+                        else:
+                            n[i] = v
+            if not normalized:
+                n[len(n) - 1] = totalEducational - total
+            else:
+                n[len(n) - 1] = (totalEducational - total)/totalEducational
+            counter+=1
+
+            mValues.append(n)
+        affiliates.append("Other")
+        return (affiliates,mValues)
+
+    def institutionalAndNoninstutionalDownloadsOverTime(self): #Return 2D array of institutional, noninstitutional, and total downloads
+        mValues = []
+        counter = 0
+        for month,value in self.months.items():
+            vals = value['Inst']["0FULL"]
+            totalInst = 0
+            for inst in vals:
+                if not np.isnan(inst[2]):
+                    totalInst += inst[2]
+            total = self.totalDownloads[counter]
+            nonInst = total - totalInst
+            val = [totalInst,nonInst,total]
+            mValues.append(val)
+            counter += 1
+        return (["Institutional","NonInstitutional","All"],mValues)
+
     def totalDownloadsByInstitutionTypeOverTime(self):
         #Return (InstitutionTypes unsorted,2D list of by insttype downloads over time (not cumulative)) tuple.
         types = []

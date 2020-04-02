@@ -1,0 +1,232 @@
+Cumulative Downloads Over Time
+,Downloads
+Oct 2019,569
+Nov 2019,1018
+Dec 2019,1423
+Jan 2020,2525
+Feb 2020,4047
+Mar 2020,5933
+
+Non Cumulative Downloads Over Time
+,Downloads
+Oct 2019,569
+Nov 2019,449
+Dec 2019,405
+Jan 2020,1102
+Feb 2020,1522
+Mar 2020,1886
+
+NonCumulative Downloads by Country Over Time
+,United States,India,Canada,United Kingdom,Germany,Other
+Oct 2019,292,9,66,13,9,180
+Nov 2019,534,20,72,32,22,336
+Dec 2019,713,33,81,43,35,480
+Jan 2020,1377,80,96,65,54,673
+Feb 2020,2511,139,121,98,72,914
+Mar 2020,3809,235,164,142,92,1259
+
+Cumulative Downloads by Country Over Time
+,United States,India,Canada,United Kingdom,Germany,Other
+Oct 2019,292,301,367,380,389,569
+Nov 2019,534,554,626,658,680,1016
+Dec 2019,713,746,827,870,905,1385
+Jan 2020,1377,1457,1553,1618,1672,2345
+Feb 2020,2511,2650,2771,2869,2941,3855
+Mar 2020,3809,4044,4208,4350,4442,5701
+
+NonCumulative Downloads by Institution Over Time
+,University of Pennsylvania,The Children's Hospital of Philadelphia,EVO Philadelphia,Penn Medicine,W/Soddo University,Other
+Oct 2019,22,30,0,22,36,133
+Nov 2019,38,58,0,26,36,234
+Dec 2019,49,77,0,29,36,301
+Jan 2020,177,110,17,45,36,474
+Feb 2020,427,123,62,77,36,697
+Mar 2020,629,132,116,83,36,897
+
+Cumulative Downloads by Institution Over Time
+,University of Pennsylvania,The Children's Hospital of Philadelphia,EVO Philadelphia,Penn Medicine,W/Soddo University,Other
+Oct 2019,22,52,52,74,110,243
+Nov 2019,38,96,96,122,158,392
+Dec 2019,49,126,126,155,191,492
+Jan 2020,177,287,304,349,385,859
+Feb 2020,427,550,612,689,725,1422
+Mar 2020,629,761,877,960,996,1893
+
+NonCumulative Downloads by CHOP Affiliates Over Time
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,30,22,22,495
+Nov 2019,58,26,38,896
+Dec 2019,77,29,49,1268
+Jan 2020,110,45,177,2193
+Feb 2020,123,77,427,3420
+Mar 2020,132,83,629,5089
+
+Cumulative Downloads by CHOP Affiliates Over Time
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,30,52,74,569
+Nov 2019,58,84,122,1018
+Dec 2019,77,106,155,1423
+Jan 2020,110,155,332,2525
+Feb 2020,123,200,627,4047
+Mar 2020,132,215,844,5933
+
+Downloads by CHOP Affiliates Over Time (%)
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,0.05272407732864675,0.03866432337434095,0.03866432337434095,0.8699472759226714
+Nov 2019,0.11508487911038395,0.04757300934316055,0.07429906724961935,1.7630430442968361
+Dec 2019,0.16199845935729754,0.05498041675056796,0.10145956107677984,2.6815615628153546
+Jan 2020,0.1919440128963175,0.06949947301191098,0.21761201116752393,3.5209445029242477
+Feb 2020,0.20048540580039106,0.09052444016039982,0.3818695670150929,4.327120587024116
+Mar 2020,0.2052574100421726,0.09370577632158751,0.4889745511084121,5.212062262527828
+
+NonCumulative Downloads by CHOP Affiliates (vs Education) Over Time
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,30,22,22,115
+Nov 2019,58,26,38,165
+Dec 2019,77,29,49,195
+Jan 2020,110,45,177,281
+Feb 2020,123,77,427,417
+Mar 2020,132,83,629,549
+
+Cumulative Downloads by CHOP Affiliates (vs Education) Over Time
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,30,52,74,189
+Nov 2019,58,84,122,287
+Dec 2019,77,106,155,350
+Jan 2020,110,155,332,613
+Feb 2020,123,200,627,1044
+Mar 2020,132,215,844,1393
+
+Downloads by CHOP Affiliates (vs Education) Over Time (%)
+,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
+Oct 2019,0.15873015873015872,0.1164021164021164,0.1164021164021164,0.6084656084656085
+Nov 2019,0.4444444444444444,0.15721844293272863,0.27966742252456533,1.1186696900982616
+Dec 2019,0.746031746031746,0.20483749055177625,0.45427059712773993,1.5948601662887376
+Jan 2020,0.8715070312028487,0.26567399245291695,0.9409626123368654,1.9218563640073687
+Feb 2020,0.9016694441958881,0.33991993212809096,1.5210090160491623,2.2374016076268584
+Mar 2020,0.9274574098119339,0.3571119092054549,2.099805577653747,2.615625103328864
+
+NonCumulative Downloads (Inst vs NonInst) Over Time
+,Institutional,NonInstitutional,All
+Oct 2019,243,326,569
+Nov 2019,392,626,1018
+Dec 2019,492,931,1423
+Jan 2020,859,1666,2525
+Feb 2020,1422,2625,4047
+Mar 2020,1893,4040,5933
+
+Cumulative Downloads (Inst vs NonInst) Over Time
+,Institutional,NonInstitutional,All
+Oct 2019,243,569,1138
+Nov 2019,392,1018,2036
+Dec 2019,492,1423,2846
+Jan 2020,859,2525,5050
+Feb 2020,1422,4047,8094
+Mar 2020,1893,5933,11866
+
+NonCumulative Downloads by Institution Type Over Time
+,Education,Government,Organization,Commercial,Military,Library
+Oct 2019,189,17,7,29,1,0
+Nov 2019,287,24,19,60,2,0
+Dec 2019,350,27,20,92,2,1
+Jan 2020,613,39,29,174,3,1
+Feb 2020,1044,54,40,274,6,4
+Mar 2020,1393,70,52,367,6,5
+
+Cumulative Downloads by Institution Type Over Time
+,Education,Government,Organization,Commercial,Military,Library
+Oct 2019,189,206,213,242,243,243
+Nov 2019,287,311,330,390,392,392
+Dec 2019,350,377,397,489,491,492
+Jan 2020,613,652,681,855,858,859
+Feb 2020,1044,1098,1138,1412,1418,1422
+Mar 2020,1393,1463,1515,1882,1888,1893
+
+NonCumulative Downloads by Article Over Time
+,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,FDA Drug Regulation: Investigational New Drug Applications,Other
+Oct 2019,12.0,9.0,13.0,12.0,23.0,500.0
+Nov 2019,31.0,19.0,19.0,64.0,36.0,849.0
+Dec 2019,71.0,36.0,41.0,81.0,48.0,1151.0
+Jan 2020,210.0,72.0,103.0,113.0,93.0,1939.0
+Feb 2020,388.0,188.0,158.0,192.0,172.0,2954.0
+Mar 2020,673.0,323.0,296.0,270.0,253.0,4123.0
+
+Cumulative Downloads by Article Over Time
+,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,FDA Drug Regulation: Investigational New Drug Applications,Other
+Oct 2019,12.0,21.0,34.0,46.0,69.0,569.0
+Nov 2019,31.0,50.0,69.0,133.0,169.0,1018.0
+Dec 2019,71.0,107.0,148.0,229.0,277.0,1428.0
+Jan 2020,210.0,282.0,385.0,498.0,591.0,2530.0
+Feb 2020,388.0,576.0,734.0,926.0,1098.0,4052.0
+Mar 2020,673.0,996.0,1292.0,1562.0,1815.0,5938.0
+
+NonCumulative Downloads by Referral Source Over Time
+,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss5/4/,Other
+Oct 2019,20,110,8,5,7,300
+Nov 2019,130,164,11,33,9,452
+Dec 2019,350,181,19,36,9,548
+Jan 2020,709,210,69,38,74,991
+Feb 2020,1232,242,82,75,82,1649
+Mar 2020,1920,268,108,99,99,2405
+
+Cumulative Downloads by Referral Source Over Time
+,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss5/4/,Other
+Oct 2019,20,130,138,143,150,450
+Nov 2019,130,294,305,338,347,799
+Dec 2019,350,531,550,586,595,1143
+Jan 2020,709,919,988,1026,1100,2091
+Feb 2020,1232,1474,1556,1631,1713,3362
+Mar 2020,1920,2188,2296,2395,2494,4899
+
+Top 50 Most Downloaded Articles
+Orphan Drugs: Understanding the FDA Approval Process,673.0
+"FDA Device Regulation: 510(k), PMA",323.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,296.0
+Writing Business Plans for a Life Science Startup or Clinical Program,270.0
+FDA Drug Regulation: Investigational New Drug Applications,253.0
+Intellectual Property Protection for Biologics,241.0
+Innate Biases,210.0
+Equity Allocation in Startups,202.0
+Preclinical Animal Models,190.0
+Accelerators and Incubators,182.0
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,181.0
+SBIR/STTR Grants: Application Guidance,162.0
+Building a Successful Startup Team,133.0
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,126.0
+What is Academic Entrepreneurship?,126.0
+Identifying Unmet Needs: Problems that Need Solutions,112.0
+Resources at Academic Entrepreneurship Centers,111.0
+Overview of Drug Development,111.0
+I-Corps as a Training Tool for New Technology Development,108.0
+Intellectual Property: Commercializing in a University Setting,107.0
+Reimbursement Strategies and CPT Codes for Device Development,106.0
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,105.0
+Digital Health: Software as a Medical Device,101.0
+The Promotion Process: Academic Entrepreneurship Career Tracks,87.0
+Overview of Device Development,81.0
+Negotiation Strategies,80.0
+Intellectual Property: Ownership and Protection in a University Setting,76.0
+Surgical Device Development,73.0
+Working with the University Technology Transfer Office,71.0
+Strategic Planning and Costs of FDA Regulation,70.0
+Development Strategies for Animal Medical Therapeutics,65.0
+Careers in Academia and Industry:  Transitions and Challenges,63.0
+Conducting Insightful Market Research,61.0
+Startup Company Formation and Management,60.0
+Pediatric Medical Device Development Pathways,59.0
+Seeking Venture Capital Investment,58.0
+Department of Defense: SBIR/STTR Grants and Other Contracts,56.0
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,56.0
+Rapid Prototyping Strategies,54.0
+Handling Disruptive Innovation in Clinical and Research Settings,53.0
+Development of Radiographic Contrast Agents for Diagnostic Imaging,52.0
+Social Entrepreneurship in Healthcare,52.0
+Careers in Academia and Industry: Transitions and Challenges,44.0
+SBIR/STTR Grants: Introduction and Overview,41.0
+Other,37.0
+Angel Investors,36.0
+The Promotion Process:  Academic Entrepreneurship Career Tracks,33.0
+Clinical and Translational Science Awards,30.0
+Laws and Ethics in relation to Medical Entrepreneurship,23.0
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,19.0
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,19.0
