@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 import glob
+import copy
 
 class Dataset:
     def __init__(self):
@@ -13,6 +14,19 @@ class Dataset:
         self.months = {}
 
         self.monthNames = ["00Oct19","01Nov19","02Dec19","03Jan20","04Feb20","05Mar20"] ##Needs to be edited every month
+
+        manualCategorization = pd.read_csv("ManualArticleCategorization.csv",encoding='ISO-8859–1').values
+        self.manualArticleCategoryMap = {}
+        self.articleCategories = []
+        for article in manualCategorization:
+            self.manualArticleCategoryMap[article[0]] = article[1]
+            try:
+                float(article[1])
+            except:
+                if not (article[1] in self.articleCategories):
+                    self.articleCategories.append(article[1])
+
+        print()
 
         for m in self.monthNames:
             self.months[m] = {}
@@ -48,7 +62,7 @@ class Dataset:
         #Return list of downloads over time (not cumulative)
         return self.totalDownloads
 
-    def totalDownloadsByCountryOverTime(self,cutoff=10):
+    def totalDownloadsByCountryOverTime(self,cutoff=10,normalized=False):
         #Return (countryNames,2D list of by country downloads over time (not cumulative)) tuple. Cutoff is the # countries that are distinguished from "other"
         totals = {}
 
@@ -81,6 +95,9 @@ class Dataset:
                 if not (country[0] in ranked) and not np.isnan(country[1]):
                     other += country[1]
             l.append(other)
+
+            if normalized:
+                l = (np.array(l)/np.sum(np.array(l))).tolist()
             ret.append(l)
         ranked.append("Other")
         return (ranked,ret)
@@ -219,7 +236,7 @@ class Dataset:
             counter += 1
         return (["Institutional","NonInstitutional","All"],mValues)
 
-    def totalDownloadsByInstitutionTypeOverTime(self):
+    def totalDownloadsByInstitutionTypeOverTime(self,normalized=False):
         #Return (InstitutionTypes unsorted,2D list of by insttype downloads over time (not cumulative)) tuple.
         types = []
 
@@ -242,6 +259,8 @@ class Dataset:
                         l[counter] += inst[2]
                 counter += 1
 
+            if normalized:
+                l = (np.array(l)/np.sum(np.array(l))).tolist()
             ret.append(l)
         return (types, ret)
 
@@ -418,3 +437,69 @@ class Dataset:
 
         return ranked
 
+    def sectionsDownloadedOverTime(self,balanced=False,normalized=False): #return tuple in std format of sections downloaded over time, w/ sections being manual categories via csv
+        ret = []
+        for month, value in self.months.items():
+            vals = value["Works"]
+            l = []
+            n = []
+            for i in range(len(self.articleCategories)):
+                l.append(0)
+                n.append(0)
+
+            if balanced:
+                for key,value in self.manualArticleCategoryMap.items():
+                    for i in range(len(self.articleCategories)):
+                        if value == self.articleCategories[i]:
+                            n[i] += 1
+
+            for categoryIndex in range(len(self.articleCategories)):
+                for work in vals:
+                    if work[0][0:8] == "Draft - ": #Remove draft articles
+                        pass
+                    elif not work[0] in self.manualArticleCategoryMap:
+                        k = self.getSimilarStringKey(work[0],self.manualArticleCategoryMap)
+                        if not k == None:
+                            if self.manualArticleCategoryMap[k] == self.articleCategories[categoryIndex] and not np.isnan(work[1]):
+                                l[categoryIndex] += work[1]
+                        else:
+                            print("key "+str(work[0])+"not manually categorized")
+                            pass
+                    elif self.manualArticleCategoryMap[work[0]] == self.articleCategories[categoryIndex] and not np.isnan(work[1]):
+                        l[categoryIndex] += work[1]
+
+            if balanced:
+                newL = []
+                for categoryIndex in range(len(self.articleCategories)):
+                    if l[categoryIndex] == 0 and n[categoryIndex] == 0:
+                        newL.append(0)
+                    else:
+                        newL.append(l[categoryIndex]/n[categoryIndex])
+                l = newL
+            if normalized:
+                l = (np.array(l)/np.sum(np.array(l))).tolist()
+            ret.append(l)
+        return (self.articleCategories, ret)
+
+    def getSimilarStringKey(self,tryKey,dictionary,threshold=0.95):
+        nKey2 = self.stripPunctation(tryKey)
+        for key,value in dictionary.items():
+            cCounter = 0
+            counter = 0
+            if isinstance(key,str) and len(key) > 0:
+                nKey = self.stripPunctation(key)
+                for cIndex in range(min(len(nKey),len(nKey2))):
+                    if nKey[cIndex] == nKey2[cIndex]:
+                        cCounter += 1
+                    counter += 1
+                if cCounter/counter >= threshold:
+                    return key
+        print()
+        return None
+
+    def stripPunctation(self,string): #Assumes param is string
+        newS = ""
+        for i in string:
+            if i in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890":
+                newS+=i
+        return newS

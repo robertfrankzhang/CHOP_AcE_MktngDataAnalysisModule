@@ -28,14 +28,27 @@ class GUIModule:
             l.append(row[colIndex])
         return l
 
-    def plotElementsOverTimeGeneral(self,a,cumulative):
-        if cumulative:
+    def plotElementsOverTimeGeneral(self,a,cumulative,stacked):
+        if cumulative and stacked:
             c = []
             for i in range(len(a[0])):
                 if i == 0:
                     c = self.cumulativeFreq(self.column(a[1], i))
                 else:
                     c += self.cumulativeFreq(self.column(a[1], i))
+                plt.plot(self.times, c, label=a[0][i])
+        elif cumulative and not stacked:
+            c = []
+            for i in range(len(a[0])):
+                c = self.cumulativeFreq(self.column(a[1], i))
+                plt.plot(self.times, c, label=a[0][i])
+        elif not cumulative and stacked:
+            c = []
+            for i in range(len(a[0])):
+                if i == 0:
+                    c = np.array(self.column(a[1], i))
+                else:
+                    c += np.array(self.column(a[1], i))
                 plt.plot(self.times, c, label=a[0][i])
         else:
             c = []
@@ -56,33 +69,37 @@ class GUIModule:
         plt.xlabel('Months '+self.startMonth+' - '+self.endMonth)
         plt.show()
 
-    def plotDownloadsByCountryOverTime(self,cutoff=10,cumulative=False):
-        countries = self.d.totalDownloadsByCountryOverTime(cutoff)
-        self.plotElementsOverTimeGeneral(countries,cumulative)
+    def plotDownloadsByCountryOverTime(self,cutoff=10,cumulative=False,stacked=False,normalized=False):
+        countries = self.d.totalDownloadsByCountryOverTime(cutoff,normalized=normalized)
+        self.plotElementsOverTimeGeneral(countries,cumulative,stacked)
 
-    def plotDownloadsByInstitutionOverTime(self,cutoff=10,cumulative=False):
+    def plotDownloadsByInstitutionOverTime(self,cutoff=10,cumulative=False,stacked=False):
         institutions = self.d.totalDownloadsByInstitutionOverTime(cutoff)
-        self.plotElementsOverTimeGeneral(institutions,cumulative)
+        self.plotElementsOverTimeGeneral(institutions,cumulative,stacked)
 
-    def plotDownloadsByAffiliatesOverTime(self,normalized=False,cumulative=False):
+    def plotDownloadsByAffiliatesOverTime(self,normalized=False,cumulative=False,stacked=False):
         institutions = self.d.totalDownloadsByCHOPAffiliatesOverTime(normalized)
-        self.plotElementsOverTimeGeneral(institutions,cumulative)
+        self.plotElementsOverTimeGeneral(institutions,cumulative,stacked)
 
-    def plotDownloadsByAffiliatesOverTimeEducational(self,normalized=False,cumulative=False):
+    def plotDownloadsByAffiliatesOverTimeEducational(self,normalized=False,cumulative=False,stacked=False):
         institutions = self.d.totalDownloadsByCHOPAffiliatesOverTimeEducation(normalized)
-        self.plotElementsOverTimeGeneral(institutions,cumulative)
+        self.plotElementsOverTimeGeneral(institutions,cumulative,stacked)
 
-    def plotInstNonInstDownloadsOverTime(self,cumulative=False):
+    def plotInstNonInstDownloadsOverTime(self,cumulative=False,stacked=False):
         institutions = self.d.institutionalAndNoninstutionalDownloadsOverTime()
-        self.plotElementsOverTimeGeneral(institutions,cumulative)
+        self.plotElementsOverTimeGeneral(institutions,cumulative,stacked)
 
-    def plotDownloadsByInstitutionTypeOverTime(self,cumulative=False):
-        institutions = self.d.totalDownloadsByInstitutionTypeOverTime()
-        self.plotElementsOverTimeGeneral(institutions,cumulative)
+    def plotDownloadsByInstitutionTypeOverTime(self,cumulative=False,stacked=False,normalized=False):
+        institutions = self.d.totalDownloadsByInstitutionTypeOverTime(normalized)
+        self.plotElementsOverTimeGeneral(institutions,cumulative,stacked)
 
-    def plotDownloadsByArticleOverTime(self,cutoff=10,cumulative=False):
+    def plotDownloadsByArticleOverTime(self,cutoff=10,cumulative=False,stacked=False):
         articles = self.d.totalDownloadsByArticleOverTime(cutoff)
-        self.plotElementsOverTimeGeneral(articles,cumulative)
+        self.plotElementsOverTimeGeneral(articles,cumulative,stacked)
+
+    def plotCategoriesDownloadedOverTime(self,normalized=False,balanced=False,cumulative=False,stacked=False):
+        categories = self.d.sectionsDownloadedOverTime(normalized=normalized,balanced=balanced)
+        self.plotElementsOverTimeGeneral(categories,cumulative=cumulative,stacked=stacked)
 
     def plotMostDownloadedArticles(self,cutoff=10):
         articles = self.d.totalDownloadsByArticle(cutoff)
@@ -116,9 +133,9 @@ class GUIModule:
         for a in articles:
             print(a)
 
-    def plotDownloadsByReferralSourceOverTime(self,cutoff=10,cumulative=False):
+    def plotDownloadsByReferralSourceOverTime(self,cutoff=10,cumulative=False,stacked=False):
         sources = self.d.referralsOverTime()
-        self.plotElementsOverTimeGeneral(sources,cumulative)
+        self.plotElementsOverTimeGeneral(sources,cumulative,stacked)
 
     def printMostDownloadedArticlesByInstitutionType(self,type):
         education = self.d.mostDownloadedArticlesByInstitutionType(type)
@@ -131,6 +148,7 @@ class GUIModule:
 
         for n in names:
             print(n)
+
 
 
 
