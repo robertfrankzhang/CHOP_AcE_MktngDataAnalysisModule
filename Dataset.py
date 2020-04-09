@@ -190,7 +190,7 @@ class Dataset:
             total = 0
             totalEducational = 0
             for inst in vals:
-                if inst[1] == "Education":
+                if inst[1] == "Education" and not np.isnan(inst[2]):
                     totalEducational += inst[2]
                 if inst[0] in affiliates and not np.isnan(inst[2]):
                     if inst[0] in totals:
@@ -342,12 +342,11 @@ class Dataset:
         for month, value in self.months.items():
             vals = value["Works"]
             for article in vals:
-                if article[0] in totals:
-                    if not np.isnan(article[1]):
+                if not np.isnan(article[1]):
+                    if article[0] in totals:
                         totals[article[0]] += article[1]
-                else:
-                    totals[article[0]] = article[1]
-
+                    else:
+                        totals[article[0]] = article[1]
         ranked = []
         for key, value in sorted(totals.items(), key=lambda item: item[1]):
             if np.isnan(value) or value <= N:
@@ -424,10 +423,11 @@ class Dataset:
 
                     if ttype == type:
                         for article in value["Inst"][institution]:
-                            if article[0] in totals:
-                                totals[article[0]] += article[1]
-                            else:
-                                totals[article[0]] = article[1]
+                            if not np.isnan(article[1]):
+                                if article[0] in totals:
+                                    totals[article[0]] += article[1]
+                                else:
+                                    totals[article[0]] = article[1]
 
         ranked = []
         for key, value in sorted(totals.items(), key=lambda item: item[1]):

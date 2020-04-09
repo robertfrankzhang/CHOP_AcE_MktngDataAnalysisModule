@@ -124,7 +124,7 @@ class GUIModule:
             print(n)
 
     def printArticlesWithLessThanNDownloads(self,N):
-        articles = self.d.articlesWithLessThanNDownloads(30)
+        articles = self.d.articlesWithLessThanNDownloads(N)
         for a in articles:
             print(a)
 
@@ -134,7 +134,7 @@ class GUIModule:
             print(a)
 
     def plotDownloadsByReferralSourceOverTime(self,cutoff=10,cumulative=False,stacked=False):
-        sources = self.d.referralsOverTime()
+        sources = self.d.referralsOverTime(cutoff=cutoff)
         self.plotElementsOverTimeGeneral(sources,cumulative,stacked)
 
     def printMostDownloadedArticlesByInstitutionType(self,type):
