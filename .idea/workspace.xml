@@ -2,13 +2,264 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b23af880-1905-4276-acdb-21a0e2c72c09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ArticleGraph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Data Analysis Module Walkthrough-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Data Analysis Module Walkthrough-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Analysis Module Walkthrough.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Analysis Module Walkthrough.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Data Analysis Module Walkthrough-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Brazil.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Ethiopia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Japan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Malaysia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Netherlands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/Thailand.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Computer Center.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/European Patent Office.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Hunter College.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/King's College London.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Mayo Foundation for Medical Education and Research.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/National Institutes of Health.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/New York University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Taiwan Academic Network.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Temple University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/The Hospital for Sick Children.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/The Scripps Research Institute.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/TransMedia Technologies (AP) Pvt Ltd.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Tufts University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/U.S. Small Business Administration.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Universite de Montpellier.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/University of Michigan Medical Center.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/University of Rochester.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/W:Soddo University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Washington University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Inst/Yale University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/00Oct19/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Australia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Belgium.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/China.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Netherlands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Taiwan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/Turkey.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/European Patent Office.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Hogan Hartson.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Indiana University-Purdue University at Indianapolis.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Mayo Foundation for Medical Education and Research.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/NUS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Oregon State University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Research Network University of Ghent.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/St Marys Newman Academic Centre.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/The Methodist Hospital.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/University of Bristol.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/University of Michigan Medical Center.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Inst/Yale University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01Nov19/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Iran, Islamic Republic Of.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Israel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Korea, Republic Of.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Pakistan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/KPMG P:S.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/Massachusetts Institute of Technology.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/NTU.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/Natus Manufacturing Limited.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/Oregon State University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/The George Washington University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/U.S. Small Business Administration.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Dec19/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Australia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Denmark.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Ireland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Italy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Kenya.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Korea, Republic Of.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Netherlands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/Switzerland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Amateur Radio Digital Communications.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Anna University Chennai.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Bower Lewis Thrower.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Chugai Pharmaceutical Co. Ltd..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Consortium GARR.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Daba S.A..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Danhost is a danish web:server hosting company.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/EVO Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Genentech Inc..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/HWC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/New Canaan Ymca.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/NorthfieldWiFi LLC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Novartis.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Regeneron.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/The Johns Hopkins Medical Institutions.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/U.S. Dept. of Health &amp; Human Service:Office of Inspector General.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/University of Georgia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/University of Illinois.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/University of North Carolina at Chapel Hill.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/University of Southern California.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Vrije Universiteit Amsterdam.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Inst/Yale University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Jan20/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Brazil.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/China.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Hong Kong.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Indonesia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Ireland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Israel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Korea, Republic Of.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Nigeria.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Philippines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Russian Federation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/South Africa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/Spain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Air Force Systems Networking.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Athlone Institute of Technology.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Beld.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Carnegie Mellon University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Case Western Reserve University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/EVO Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Five Net Service Provider Pvt. Ltd..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/General Electric Company.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Genscript Corp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Halliburton Company.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Merck and Co. Inc..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/NTU.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/New York University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Northeastern University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Novartis.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Ohio Public Library Information Network.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/One Mansion Inc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Parklawn Computer Center:Dimes HQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Sanofi Aventis Group SA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Temple University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/The Bloomsbury Computing Consortium.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/United States Senate.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/University of Michigan School of Nursing.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/University of Missouri - Kansas City.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/University of Oregon.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Warwickshire College.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Inst/Wichita State University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04Feb20/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Australia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Canada.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/China.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/France.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Germany.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Hong Kong.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/India.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Ireland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Israel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Japan.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Korea, Republic Of.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Netherlands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Philippines.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Russian Federation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Singapore.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/South Africa.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Spain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/Switzerland.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/United Kingdom.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Geo/United States.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/0FULL.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Boehringer Ingelheim Pharmaceuticals Inc..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/CJSC R-Pharm.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Cornell University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/EVO Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/General Electric Company.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Halliburton Company.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/IPTelecom Vietnam.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/International Livestock Research Institute.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Muth Kommunikationstechnik GmbH.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Northwestern University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Parklawn Computer Center:Dimes HQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Penn Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Pfizer Inc..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Rexham Industries.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Sears Canada Inc..csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Shearman &amp; Sterling LLP.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Shimadzu Corporation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Startspot Mediaworks Inc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Sungkyunkwan University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/Temple University.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/The Children's Hospital of Philadelphia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/U.S. Center for Disease Control and Prevention.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University Hospitals Health System.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of California at Berkeley.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Cambridge.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Illinois.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Kentucky.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Pennsylvania.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Sydney.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Virginia.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Inst/University of Wisconsin Madison.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Referrers.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05Mar20/Works.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Analysis Module Walkthrough.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ExportModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExportModule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Exports/exported.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Exports/exported.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUIModule.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUIModule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TotalDownloads.csv" beforeDir="false" afterPath="$PROJECT_DIR$/TotalDownloads.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TotalDownloads.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/TotalDownloads.xlsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +283,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUIModule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+            <state relative-caret-position="1440">
+              <caret line="96" column="44" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="44" />
               <folding>
                 <element signature="e#1#32#0" expanded="true" />
               </folding>
@@ -44,11 +295,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="352" selection-start-line="352" selection-end-line="352" />
+            <state relative-caret-position="165">
+              <caret line="624" column="29" selection-start-line="624" selection-start-column="29" selection-end-line="624" selection-end-column="29" />
               <folding>
                 <element signature="e#1#20#0" expanded="true" />
               </folding>
@@ -57,10 +308,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ArticleGraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="104" selection-start-line="32" selection-start-column="104" selection-end-line="32" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ExportModule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="396">
+              <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -71,8 +331,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="315">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -91,7 +351,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>none</find>
       <find>reverse</find>
       <find>monthnames</find>
       <find>full</find>
@@ -99,6 +358,13 @@
       <find>normal</find>
       <find>nodo</find>
       <find>animal</find>
+      <find>type</find>
+      <find>none</find>
+      <find>air fo</find>
+      <find>air</find>
+      <find>totaldownloadsbyar</find>
+      <find>orph</find>
+      <find>self.month</find>
       <find>print</find>
     </findStrings>
   </component>
@@ -108,18 +374,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ExportModule.py" />
-        <option value="$PROJECT_DIR$/Main.py" />
-        <option value="$PROJECT_DIR$/Dataset.py" />
         <option value="$PROJECT_DIR$/GUIModule.py" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/ArticleGraph.py" />
+        <option value="$PROJECT_DIR$/ExportModule.py" />
+        <option value="$PROJECT_DIR$/Dataset.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1968" />
-    <option name="y" value="82" />
+    <option name="y" value="23" />
     <option name="width" value="1632" />
-    <option name="height" value="976" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,6 +393,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,7 +405,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,18 +488,25 @@
       <workItem from="1585950341148" duration="7343000" />
       <workItem from="1585999597676" duration="5686000" />
       <workItem from="1586434040567" duration="261000" />
-      <workItem from="1586437960931" duration="2642000" />
+      <workItem from="1586437960931" duration="2853000" />
+      <workItem from="1587135169980" duration="524000" />
+      <workItem from="1588513067643" duration="19030000" />
+      <workItem from="1589406043592" duration="5488000" />
+      <workItem from="1589492680091" duration="3206000" />
+      <workItem from="1589995504045" duration="412000" />
+      <workItem from="1590020422364" duration="670000" />
+      <workItem from="1590067992324" duration="2261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48471000" />
+    <option name="totallyTimeSpent" value="80273000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1968" y="82" width="1632" height="976" extended-state="0" />
+    <frame x="0" y="23" width="1632" height="974" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27798742" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30251572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,11 +521,11 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50062895" side_tool="true" weight="0.1764706" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49937108" visible="true" weight="0.32466063" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49937108" visible="true" weight="0.38435373" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.21257861" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.4528302" />
       <window_info anchor="right" id="Database" order="4" weight="0.32955974" />
     </layout>
   </component>
@@ -263,9 +536,7 @@
     <SUITE FILE_PATH="coverage/CHOP$Main.coverage" NAME="Main Coverage Results" MODIFIED="1584903744257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/03Jan20/Inst/Danhost is a danish web:server hosting company.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/03Jan20/Inst/Danhost is a danish web:server hosting company.csv" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -273,42 +544,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GUIModule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="44" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="44" />
+          <folding>
+            <element signature="e#1#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArticleGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="104" selection-start-line="32" selection-start-column="104" selection-end-line="32" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ExportModule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="396">
+          <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="352" selection-start-line="352" selection-end-line="352" />
-          <folding>
-            <element signature="e#1#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUIModule.py">
+    <entry file="file://$PROJECT_DIR$/Dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        <state relative-caret-position="165">
+          <caret line="624" column="29" selection-start-line="624" selection-start-column="29" selection-end-line="624" selection-end-column="29" />
           <folding>
-            <element signature="e#1#32#0" expanded="true" />
+            <element signature="e#1#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

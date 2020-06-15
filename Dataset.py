@@ -2,6 +2,8 @@
 import pandas as pd
 import numpy as np
 import glob
+from ArticleGraph import ArticleGraph
+
 import copy
 
 class Dataset:
@@ -13,7 +15,7 @@ class Dataset:
         #Get month data
         self.months = {}
 
-        self.monthNames = ["00Oct19","01Nov19","02Dec19","03Jan20","04Feb20","05Mar20"] ##Needs to be edited every month
+        self.monthNames = ["00Oct19","01Nov19","02Dec19","03Jan20","04Feb20","05Mar20","06Apr20"] ##Needs to be edited every month
 
         manualCategorization = pd.read_csv("ManualArticleCategorization.csv",encoding='ISO-8859–1').values
         self.manualArticleCategoryMap = {}
@@ -26,37 +28,126 @@ class Dataset:
                 if not (article[1] in self.articleCategories):
                     self.articleCategories.append(article[1])
 
-        print()
 
         for m in self.monthNames:
             self.months[m] = {}
 
         for name in self.monthNames:
             #Referral Data
-            r = pd.read_csv(name+"/Referrers.csv")
-            self.months[name]["Referrals"] = r.values
+            rCount = 0
+            for file in glob.glob(name+"/Referrers*.csv"):
+                r = pd.read_csv(file)
+                self.months[name]["Referrals"] = r.values
+                rCount += 1
+            if rCount > 1 or rCount == 0:
+                raise Exception("No referral file")
 
             #Article Data
-            w = pd.read_csv(name+"/Works.csv")
-            self.months[name]["Works"] = w.values
+            wCount = 0
+            for file in glob.glob(name+"/Works*.csv"):
+                w = pd.read_csv(file)
+                self.months[name]["Works"] = w.values
+                wCount += 1
+            if wCount > 1 or wCount == 0:
+                raise Exception("No works file")
+
+
 
             #Institutional Data
             self.months[name]["Inst"] = {}
-            for file in glob.glob(name+"/Inst/"+"*.csv"):
-                iName = file.split("/")
-                iName = iName[len(iName)-1]
-                iName = iName[:-4]
-                i = pd.read_csv(file)
-                self.months[name]["Inst"][iName] = i.values
 
+            fiCount = 0
+            for file in glob.glob(name+"/Institutions*.csv"):
+                full0i = pd.read_csv(file).values
+                self.months[name]["Inst"]["0FULL"] = full0i
+                fiCount += 1
+            if fiCount > 1 or fiCount == 0:
+                raise Exception("No FULL0 institutions file")
+
+            instCount = 0
+            unsortedInst = glob.glob(name + "/Institution Details*.csv")
+            sortedDict = {}
+            for inst in unsortedInst:
+                if len(inst) in sortedDict:
+                    sortedDict[len(inst)].append(inst)
+                else:
+                    sortedDict[len(inst)] = [inst]
+
+            s = []
+            for key,value in sorted(sortedDict.items()):
+                v = sorted(value)
+                s.extend(v)
+
+            for file in s:
+                i = pd.read_csv(file)
+                self.months[name]["Inst"][full0i[instCount,0]] = i.values
+                instCount += 1
             # Geographical Data
             self.months[name]["Geo"] = {}
-            for file in glob.glob(name + "/Geo/" + "*.csv"):
-                gName = file.split("/")
-                gName = gName[len(gName) - 1]
-                gName = gName[:-4]
+
+            fgCount = 0
+            for file in glob.glob(name + "/Countries*.csv"):
+                full0g = pd.read_csv(file).values
+                self.months[name]["Geo"]["0FULL"] = full0g
+                fgCount += 1
+            if fgCount > 1 or fgCount == 0:
+                raise Exception("No FULL0 countries file")
+
+            geoCount = 0
+            unsortedInst = glob.glob(name + "/Country Details*.csv")
+            sortedDict = {}
+            for inst in unsortedInst:
+                if len(inst) in sortedDict:
+                    sortedDict[len(inst)].append(inst)
+                else:
+                    sortedDict[len(inst)] = [inst]
+
+            s = []
+            for key, value in sorted(sortedDict.items()):
+                v = sorted(value)
+                s.extend(v)
+
+            for file in s:
                 g = pd.read_csv(file)
-                self.months[name]["Geo"][gName] = g.values
+                self.months[name]["Geo"][full0g[geoCount,0]] = g.values
+                geoCount += 1
+
+        self.geoArticleGraph = self.createGeoArticleGraph()
+        self.instArticleGraph = self.createInstArticleGraph()
+
+    def createInstArticleGraph(self):
+        graph = ArticleGraph(self.articleNames())
+
+        for month, value in self.months.items():
+            ref = self.months[month]["Inst"]["0FULL"]
+            for institution in value["Inst"]:
+                if institution != "0FULL":
+                    for article in self.months[month]["Inst"][institution]:
+                        for article2 in self.months[month]["Inst"][institution]:
+                            if article[0] != article2[0]:
+                                graph.addOutgoingEdgeFromTo(article[0], article2[0], min(article[1], article2[1]))
+
+        return graph
+
+    def createGeoArticleGraph(self):
+        graph = ArticleGraph(self.articleNames())
+
+        for month, value in self.months.items():
+            ref = self.months[month]["Geo"]["0FULL"]
+            for country in value["Geo"]:
+                if country != "0FULL":
+                    for article in self.months[month]["Geo"][country]:
+                        for article2 in self.months[month]["Geo"][country]:
+                            if article[0] != article2[0]:
+                                graph.addOutgoingEdgeFromTo(article[0], article2[0], min(article[1], article2[1]))
+
+        return graph
+
+    def getMostRelatedArticles(self,articleName,tag):
+        if tag == 'inst':
+            return self.instArticleGraph.getRelatedArticles(articleName)
+        if tag == 'geo':
+            return self.geoArticleGraph.getRelatedArticles(articleName)
 
     def totalDownloadsOverTime(self):
         #Return list of downloads over time (not cumulative)
@@ -304,11 +395,17 @@ class Dataset:
         ranked.append("Other")
         return (ranked, ret)
 
-    def totalDownloadsByArticle(self,cutoff=10):
+    def totalDownloadsByArticle(self,cutoff=10,month_cutoff=None):
         #Return dictionary of most downloaded articles. Cutoff is the # articles that are distinguished from "other"
         totals = {}
 
-        for month, value in self.months.items():
+        copyMonths = copy.deepcopy(list(self.months.items()))
+        if month_cutoff == None:
+            useMonths = copyMonths
+        else:
+            useMonths = copyMonths[(len(copyMonths) - month_cutoff):]
+
+        for month, value in useMonths:
             vals = value["Works"]
             for article in vals:
                 if not np.isnan(article[1]):
@@ -322,6 +419,7 @@ class Dataset:
             if not np.isnan(value):
                 ranked.append(key)
         ranked.reverse()
+        cutoff = min(len(ranked),cutoff)
         ranked = ranked[:cutoff]
         ret = {}
         ret["Other"] = 0
@@ -397,11 +495,18 @@ class Dataset:
         ranked.append("Other")
         return (ranked, ret)
 
-    def mostDownloadedArticlesByInstitutionType(self,type):
-        #Returns 2D sorted list of articles and download frequency
+    def mostDownloadedArticlesByInstitutionType(self,type,month_cutoff=None):
+        #Returns 2D sorted list of articles and download frequency.
+        #month_cutoff is the cutoff of how many months (including present) should be included in analysis
         types = []
 
-        for month, value in self.months.items():
+        copyMonths = copy.deepcopy(list(self.months.items()))
+        if month_cutoff == None:
+            useMonths = copyMonths
+        else:
+            useMonths = copyMonths[(len(copyMonths)-month_cutoff):]
+
+        for month, value in useMonths:
             vals = value["Inst"]["0FULL"]
             for inst in vals:
                 if not (inst[1] in types):
@@ -412,14 +517,15 @@ class Dataset:
 
         totals = {}
 
-        ref = self.months[month]["Inst"]["0FULL"]
-        for month, value in self.months.items():
+        for month, value in useMonths:
+            ref = self.months[month]["Inst"]["0FULL"]
             for institution in value["Inst"]:
                 if institution != "0FULL":
                     ttype = None
                     for i in ref:
                         if i[0] == institution:
                             ttype = i[1]
+                            break
 
                     if ttype == type:
                         for article in value["Inst"][institution]:
@@ -429,10 +535,62 @@ class Dataset:
                                 else:
                                     totals[article[0]] = article[1]
 
+
         ranked = []
         for key, value in sorted(totals.items(), key=lambda item: item[1]):
             if not np.isnan(value):
                 ranked.append([key,value])
+        ranked.reverse()
+
+        return ranked
+
+    def mostDownloadedArticlesNonInstitutional(self,month_cutoff = None):
+        # Returns 2D sorted list of articles and download frequency
+        types = []
+
+        copyMonths = copy.deepcopy(list(self.months.items()))
+        if month_cutoff == None:
+            useMonths = copyMonths
+        else:
+            useMonths = copyMonths[(len(copyMonths) - month_cutoff):]
+
+        for month, value in useMonths:
+            vals = value["Inst"]["0FULL"]
+            for inst in vals:
+                if not (inst[1] in types):
+                    types.append(inst[1])
+
+        instTotals = {}
+        totals = {}
+
+        for month, value in useMonths:
+            for institution in value["Inst"]:
+                if institution != "0FULL":
+                    for article in value["Inst"][institution]:
+                        if not np.isnan(article[1]):
+                            if article[0] in instTotals:
+                                instTotals[article[0]] += article[1]
+                            else:
+                                instTotals[article[0]] = article[1]
+
+            for article in value['Works']:
+                if not np.isnan(article[1]):
+                    if article[0] in totals:
+                        totals[article[0]] += article[1]
+                    else:
+                        totals[article[0]] = article[1]
+
+        realTotals = {}
+        for key in totals.keys():
+            if key in instTotals:
+                realTotals[key] = totals[key] - instTotals[key]
+            else:
+                realTotals[key] = totals[key]
+
+        ranked = []
+        for key, value in sorted(realTotals.items(), key=lambda item: item[1]):
+            if not np.isnan(value):
+                ranked.append([key, value])
         ranked.reverse()
 
         return ranked
@@ -494,7 +652,6 @@ class Dataset:
                     counter += 1
                 if cCounter/counter >= threshold:
                     return key
-        print()
         return None
 
     def stripPunctation(self,string): #Assumes param is string
@@ -503,3 +660,195 @@ class Dataset:
             if i in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890":
                 newS+=i
         return newS
+
+    ##################################################################################################
+    def getArticleTotalDownloads(self,articleName):
+        total = 0
+        for month, value in self.months.items():
+            for article in value["Works"]:
+                if article[0] == articleName and not np.isnan(article[1]):
+                    total += article[1]
+        return total
+
+    def getArticleDownloadsOverTime(self,articleName):
+        totals = []
+        for month, value in self.months.items():
+            monthTotal = 0
+            for article in value["Works"]:
+                if article[0] == articleName and not np.isnan(article[1]):
+                    monthTotal += article[1]
+            totals.append(monthTotal)
+        return totals
+
+    def getRelativeArticleDownloadsOverTime(self,articleName):
+        artOverTime = self.getArticleDownloadsOverTime(articleName)
+        totalOverTime = self.totalDownloadsOverTime()
+        ret = []
+        for i in range(len(artOverTime)):
+            ret.append(artOverTime[i]/totalOverTime[i])
+        return ret
+
+    def getArticleTopCountries(self,articleName,normalized=True):
+        countryTotals = {}
+        for month, value in self.months.items():
+            for country in value["Geo"]:
+                if country != "0FULL":
+                    for article in value["Geo"][country]:
+                        if article[0] == articleName and not np.isnan(article[1]):
+                            if country in countryTotals:
+                                countryTotals[country] += article[1]
+                            else:
+                                countryTotals[country] = article[1]
+
+        ranked = []
+        total = 0
+        for key, value in sorted(countryTotals.items(), key=lambda item: item[1]):
+            if not np.isnan(value):
+                ranked.append([key, value])
+                total += value
+        ranked.reverse()
+
+        if normalized and total != 0:
+            for i in range(len(ranked)):
+                ranked[i][1]/=total
+
+        return ranked
+
+    def getArticleTopInstitutions(self,articleName,normalized=True):
+        instTotals = {}
+        for month, value in self.months.items():
+            for inst in value["Inst"]:
+                if inst != "0FULL":
+                    for article in value["Inst"][inst]:
+                        if article[0] == articleName and not np.isnan(article[1]):
+                            if inst in instTotals:
+                                instTotals[inst] += article[1]
+                            else:
+                                instTotals[inst] = article[1]
+
+        ranked = []
+        total = 0
+        for key, value in sorted(instTotals.items(), key=lambda item: item[1]):
+            if not np.isnan(value):
+                ranked.append([key, value])
+                total += value
+        ranked.reverse()
+
+        if normalized and total != 0:
+            for i in range(len(ranked)):
+                ranked[i][1]/=total
+
+        return ranked
+
+    def getArticleTotalInstType(self,articleName,normalized=True):
+        typesCount  = {}
+        for month, value in self.months.items():
+            for inst in value['Inst']:
+                if inst != "0FULL":
+                    for article in value['Inst'][inst]:
+                        if article[0] == articleName and not np.isnan(article[1]):
+                            #Find inst type
+                            for i in value['Inst']['0FULL']:
+                                if i[0] == inst:
+                                    if i[1] in typesCount:
+                                        typesCount[i[1]]+=article[1]
+                                    else:
+                                        typesCount[i[1]] = article[1]
+                                    break
+                            break
+        s = 0
+        for type,count in typesCount.items():
+            s += count
+        totalD = self.getArticleTotalDownloads(articleName)
+
+        allTypes = ['Education', 'Government', 'Organization', 'Commercial', 'Military', 'Library']
+        typesCount2 = {}
+        for t in allTypes:
+            if not t in typesCount:
+                typesCount2[t] = 0
+            else:
+                typesCount2[t] = typesCount[t]
+
+        typesCount2["NonInstitutional"] = totalD-s
+        if normalized and totalD != 0:
+            for key in typesCount2.keys():
+                typesCount2[key] /= totalD
+
+        return typesCount2
+
+    def getRelativeArticleTotalInstType(self,articleName):
+        typesDict = self.getArticleTotalInstType(articleName)
+        totals = self.totalDownloadsByInstitutionTypeOverTime()
+        totalDict = {}
+        for i in range(len(totals[0])):
+            totalDict[totals[0][i]] = sum(totals[1][i])/sum(self.totalDownloads)
+
+        retDict = {}
+        for type in totals[0]:
+            retDict[type] = typesDict[type]-totalDict[type]
+
+        allTypes = ['Education', 'Government', 'Organization', 'Commercial', 'Military', 'Library']
+        ret2Dict = {}
+        for type in allTypes:
+            ret2Dict[type] = retDict[type]
+
+        return ret2Dict
+
+    def getArticleInstTypeOverTime(self,articleName,normalized=True):
+
+        allTypes = ['Education','Government','Organization','Commercial','Military','Library']
+
+        typesCount = []
+        types = []
+        for month, value in self.months.items():
+            monthTypesCount = {}
+            for inst in value['Inst']:
+                if inst != "0FULL":
+                    for article in value['Inst'][inst]:
+                        if article[0] == articleName and not np.isnan(article[1]):
+                            #Find inst type
+                            for i in value['Inst']['0FULL']:
+                                if i[0] == inst:
+                                    if i[1] in monthTypesCount:
+                                        monthTypesCount[i[1]]+=article[1]
+                                    else:
+                                        monthTypesCount[i[1]] = article[1]
+                                    if not i[1] in types:
+                                        types.append(i[1])
+                                    break
+                            break
+            typesCount.append(monthTypesCount)
+        ret2 = []
+        totalDs = self.getArticleDownloadsOverTime(articleName)
+        o = []
+        c = 0
+        for month in range(len(typesCount)):
+            monthRet = []
+            for type in allTypes:
+                if type in types:
+                    if type in typesCount[month]:
+                        monthRet.append(typesCount[month][type])
+                    else:
+                        monthRet.append(0)
+                else:
+                    monthRet.append(0)
+            o.append(sum(monthRet))
+            monthRet.append(totalDs[c]-sum(monthRet))
+            if normalized and sum(monthRet) != 0:
+                monthRet = (np.array(monthRet)/sum(monthRet)).tolist()
+            ret2.append(monthRet)
+            c += 1
+        allTypes.append("NonInstitutional")
+
+        return (allTypes,ret2)
+
+
+
+    def articleNames(self):
+        articles = []
+        for month,value in self.months.items():
+            for article in value["Works"]:
+                if not article[0] in articles:
+                    articles.append(article[0])
+        return articles
+

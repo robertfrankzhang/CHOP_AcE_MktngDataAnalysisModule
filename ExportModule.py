@@ -163,8 +163,32 @@ class ExportModule:
                 writer.writerow(row)
             writer.writerow([""])
 
+            writer.writerow(["Most Downloaded Articles over the past 3 months (Education)"])
+            arts = self.d.mostDownloadedArticlesByInstitutionType("Education",month_cutoff=3)
+            for row in arts:
+                writer.writerow(row)
+            writer.writerow([""])
+
             writer.writerow(["Most Downloaded Articles (Commercial)"])
             arts = self.d.mostDownloadedArticlesByInstitutionType("Commercial")
+            for row in arts:
+                writer.writerow(row)
+            writer.writerow([""])
+
+            writer.writerow(["Most Downloaded Articles over the past 3 months (Commercial)"])
+            arts = self.d.mostDownloadedArticlesByInstitutionType("Commercial", month_cutoff=3)
+            for row in arts:
+                writer.writerow(row)
+            writer.writerow([""])
+
+            writer.writerow(["Most Downloaded Articles (NonInstitutional)"])
+            arts = self.d.mostDownloadedArticlesNonInstitutional()
+            for row in arts:
+                writer.writerow(row)
+            writer.writerow([""])
+
+            writer.writerow(["Most Downloaded Articles over the past 3 months (NonInstitutional)"])
+            arts = self.d.mostDownloadedArticlesNonInstitutional(month_cutoff=3)
             for row in arts:
                 writer.writerow(row)
             writer.writerow([""])
@@ -185,6 +209,21 @@ class ExportModule:
                 writer.writerow(row)
             writer.writerow([""])
 
+            writer.writerow(["Top 50 Most Downloaded Articles over the past 3 months"])
+            articles = self.d.totalDownloadsByArticle(50,month_cutoff=3)
+            names = []
+            vals = []
+            for k, v in sorted(articles.items(), key=lambda item: item[1]):
+                names.append(k)
+                vals.append(v)
+            names.reverse()
+            vals.reverse()
+            y_pos = np.arange(len(names))
+            t = np.transpose(np.array([names, vals]))
+            for row in t:
+                writer.writerow(row)
+            writer.writerow([""])
+
             writer.writerow(["Top 8 Most Downloaded Articles"])
             articles = self.d.totalDownloadsByArticle(8)
             names = []
@@ -198,6 +237,85 @@ class ExportModule:
             t = np.transpose(np.array([names, vals]))
             for row in t:
                 writer.writerow(row)
+
+
+
+    def exportArticles(self,filename="Exports/articles.csv"):
+        with open(filename, mode="w") as file:
+            writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            for article in self.d.articleNames():
+                writer.writerow(["Title: "+article])
+
+                a = self.d.getArticleTotalDownloads(article)
+                writer.writerow(["Total Downloads:",a])
+                writer.writerow([])
+
+                b = self.d.getArticleDownloadsOverTime(article)
+                writer.writerow(["Total Downloads Over Time"])
+                writer.writerow(["","Downloads"])
+                for i in range(len(self.times)):
+                    writer.writerow([self.times[i], b[i]])
+                writer.writerow([])
+
+                c = self.d.getArticleTopCountries(article)
+                writer.writerow(["Top Countries"])
+                writer.writerow(["Country","Downloads"])
+                for row in c:
+                    writer.writerow(row)
+                writer.writerow([])
+
+                d = self.d.getArticleTopInstitutions(article)
+                writer.writerow(["Top Institutions"])
+                writer.writerow(["Institution", "Downloads"])
+                for row in d:
+                    writer.writerow(row)
+                writer.writerow([])
+
+                d = self.d.getArticleTopInstitutions(article,normalized=False)
+                writer.writerow(["Top Institutions (Not %)"])
+                writer.writerow(["Institution", "Downloads"])
+                for row in d:
+                    writer.writerow(row)
+                writer.writerow([])
+
+                e = self.d.getArticleTotalInstType(article)
+                writer.writerow(["Institution Type Composition"])
+                writer.writerow(["Institution Type","Downloads"])
+                for type,count in e.items():
+                    writer.writerow([type,count])
+                writer.writerow([])
+
+                f = self.d.getArticleInstTypeOverTime(article)
+                self.exportElementsOverTimeGeneral(f,writer,"Institution Type Over Time",cumulative=False,stacked=False)
+
+                g = self.d.getRelativeArticleTotalInstType(article)
+                writer.writerow(["Institution Type Relative Composition"])
+                writer.writerow(["Institution Type", "Relative Downloads"])
+                for type,count in g.items():
+                    writer.writerow([type,count])
+                writer.writerow([])
+
+                h = self.d.getRelativeArticleDownloadsOverTime(article)
+                writer.writerow(["Total Relative Downloads Over Time"])
+                writer.writerow(["", "Downloads"])
+                for i in range(len(self.times)):
+                    writer.writerow([self.times[i], h[i]])
+                writer.writerow([])
+
+                i = self.d.getMostRelatedArticles(article,'geo')
+                writer.writerow(["Most Related Articles by Geography"])
+                for country,value in i.items():
+                    writer.writerow([country,value])
+                writer.writerow([])
+
+                j = self.d.getMostRelatedArticles(article, 'inst')
+                writer.writerow(["Most Related Articles by Institution"])
+                for inst, value in j.items():
+                    writer.writerow([inst, value])
+                writer.writerow([])
+
+                writer.writerow(["#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#","#"])
+                writer.writerow([])
 
 
 

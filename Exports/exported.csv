@@ -6,6 +6,7 @@ Dec 2019,1423
 Jan 2020,2525
 Feb 2020,4047
 Mar 2020,5933
+Apr 2020,7803
 
 Non Cumulative Downloads Over Time
 ,Downloads
@@ -15,69 +16,77 @@ Dec 2019,405
 Jan 2020,1102
 Feb 2020,1522
 Mar 2020,1886
+Apr 2020,1870
 
 NonCumulative Downloads by Country Over Time
-,United States,India,Canada,United Kingdom,Germany,Other
-Oct 2019,292,9,66,13,9,180
-Nov 2019,242,11,6,19,13,156
-Dec 2019,179,13,9,11,13,144
-Jan 2020,664,47,15,22,19,193
-Feb 2020,1134,59,25,33,18,241
-Mar 2020,1298,96,43,44,20,345
+,United States,India,United Kingdom,Canada,Germany,Other
+Oct 2019,292,9,13,66,9,180
+Nov 2019,242,11,19,6,13,156
+Dec 2019,180,13,11,9,13,146
+Jan 2020,664,47,22,15,19,193
+Feb 2020,1134,59,33,25,18,241
+Mar 2020,1298,96,44,43,20,345
+Apr 2020,1123,131,81,43,28,450
 
 Cumulative Downloads by Country Over Time
-,United States,India,Canada,United Kingdom,Germany,Other
-Oct 2019,292,9,66,13,9,180
-Nov 2019,534,20,72,32,22,336
-Dec 2019,713,33,81,43,35,480
-Jan 2020,1377,80,96,65,54,673
-Feb 2020,2511,139,121,98,72,914
-Mar 2020,3809,235,164,142,92,1259
+,United States,India,United Kingdom,Canada,Germany,Other
+Oct 2019,292,9,13,66,9,180
+Nov 2019,534,20,32,72,22,336
+Dec 2019,714,33,43,81,35,482
+Jan 2020,1378,80,65,96,54,675
+Feb 2020,2512,139,98,121,72,916
+Mar 2020,3810,235,142,164,92,1261
+Apr 2020,4933,366,223,207,120,1711
 
 Cumulative Downloads by Country Over Time (Stacked)
-,United States,India,Canada,United Kingdom,Germany,Other
-Oct 2019,292,301,367,380,389,569
-Nov 2019,534,554,626,658,680,1016
-Dec 2019,713,746,827,870,905,1385
-Jan 2020,1377,1457,1553,1618,1672,2345
-Feb 2020,2511,2650,2771,2869,2941,3855
-Mar 2020,3809,4044,4208,4350,4442,5701
+,United States,India,United Kingdom,Canada,Germany,Other
+Oct 2019,292,301,314,380,389,569
+Nov 2019,534,554,586,658,680,1016
+Dec 2019,714,747,790,871,906,1388
+Jan 2020,1378,1458,1523,1619,1673,2348
+Feb 2020,2512,2651,2749,2870,2942,3858
+Mar 2020,3810,4045,4187,4351,4443,5704
+Apr 2020,4933,5299,5522,5729,5849,7560
 
 NonCumulative Downloads by Country Over Time (%)
-,United States,India,Canada,United Kingdom,Germany,Other
-Oct 2019,0.5131810193321616,0.015817223198594025,0.11599297012302284,0.022847100175746926,0.015817223198594025,0.3163444639718805
-Nov 2019,0.5413870246085011,0.024608501118568233,0.013422818791946308,0.042505592841163314,0.029082774049217,0.348993288590604
-Dec 2019,0.48509485094850946,0.03523035230352303,0.024390243902439025,0.02981029810298103,0.03523035230352303,0.3902439024390244
-Jan 2020,0.6916666666666667,0.04895833333333333,0.015625,0.022916666666666665,0.019791666666666666,0.20104166666666667
-Feb 2020,0.7509933774834437,0.0390728476821192,0.016556291390728478,0.02185430463576159,0.011920529801324504,0.15960264900662252
-Mar 2020,0.7031419284940412,0.05200433369447454,0.023293607800650054,0.023835319609967497,0.010834236186348862,0.18689057421451788
+,United States,India,United Kingdom,Canada,Germany,Other
+Oct 2019,0.5131810193321616,0.015817223198594025,0.022847100175746926,0.11599297012302284,0.015817223198594025,0.3163444639718805
+Nov 2019,0.5413870246085011,0.024608501118568233,0.042505592841163314,0.013422818791946308,0.029082774049217,0.348993288590604
+Dec 2019,0.4838709677419355,0.03494623655913978,0.02956989247311828,0.024193548387096774,0.03494623655913978,0.3924731182795699
+Jan 2020,0.6916666666666667,0.04895833333333333,0.022916666666666665,0.015625,0.019791666666666666,0.20104166666666667
+Feb 2020,0.7509933774834437,0.0390728476821192,0.02185430463576159,0.016556291390728478,0.011920529801324504,0.15960264900662252
+Mar 2020,0.7031419284940412,0.05200433369447454,0.023835319609967497,0.023293607800650054,0.010834236186348862,0.18689057421451788
+Apr 2020,0.6050646551724138,0.07058189655172414,0.043642241379310345,0.023168103448275863,0.015086206896551725,0.24245689655172414
 
 NonCumulative Downloads by Institution Over Time
 ,University of Pennsylvania,The Children's Hospital of Philadelphia,EVO Philadelphia,Penn Medicine,W/Soddo University,Other
 Oct 2019,22,30,0,22,36,133
 Nov 2019,16,28,0,4,0,101
-Dec 2019,11,19,0,3,0,67
+Dec 2019,11,19,0,3,0,68
 Jan 2020,128,33,17,16,0,173
 Feb 2020,250,13,45,32,0,223
 Mar 2020,202,9,54,6,0,200
+Apr 2020,12,8,0,8,0,159
 
 Cumulative Downloads by Institution Over Time
 ,University of Pennsylvania,The Children's Hospital of Philadelphia,EVO Philadelphia,Penn Medicine,W/Soddo University,Other
 Oct 2019,22,30,0,22,36,133
 Nov 2019,38,58,0,26,36,234
-Dec 2019,49,77,0,29,36,301
-Jan 2020,177,110,17,45,36,474
-Feb 2020,427,123,62,77,36,697
-Mar 2020,629,132,116,83,36,897
+Dec 2019,49,77,0,29,36,302
+Jan 2020,177,110,17,45,36,475
+Feb 2020,427,123,62,77,36,698
+Mar 2020,629,132,116,83,36,898
+Apr 2020,641,140,116,91,36,1057
 
 Cumulative Downloads by Institution Over Time (Stacked)
 ,University of Pennsylvania,The Children's Hospital of Philadelphia,EVO Philadelphia,Penn Medicine,W/Soddo University,Other
 Oct 2019,22,52,52,74,110,243
 Nov 2019,38,96,96,122,158,392
-Dec 2019,49,126,126,155,191,492
-Jan 2020,177,287,304,349,385,859
-Feb 2020,427,550,612,689,725,1422
-Mar 2020,629,761,877,960,996,1893
+Dec 2019,49,126,126,155,191,493
+Jan 2020,177,287,304,349,385,860
+Feb 2020,427,550,612,689,725,1423
+Mar 2020,629,761,877,960,996,1894
+Apr 2020,641,781,897,988,1024,2081
 
 NonCumulative Downloads by CHOP Affiliates Over Time
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -87,6 +96,7 @@ Dec 2019,19,3,11,372
 Jan 2020,33,16,128,925
 Feb 2020,13,32,250,1227
 Mar 2020,9,6,202,1669
+Apr 2020,8,8,12,1842
 
 Cumulative Downloads by CHOP Affiliates Over Time
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -96,6 +106,7 @@ Dec 2019,77,29,49,1268
 Jan 2020,110,45,177,2193
 Feb 2020,123,77,427,3420
 Mar 2020,132,83,629,5089
+Apr 2020,140,91,641,6931
 
 Cumulative Downloads by CHOP Affiliates Over Time (Stacked)
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -105,6 +116,7 @@ Dec 2019,77,106,155,1423
 Jan 2020,110,155,332,2525
 Feb 2020,123,200,627,4047
 Mar 2020,132,215,844,5933
+Apr 2020,140,231,872,7803
 
 Downloads by CHOP Affiliates Over Time (%)
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -114,6 +126,7 @@ Dec 2019,0.04691358024691358,0.007407407407407408,0.027160493827160494,0.9185185
 Jan 2020,0.029945553539019964,0.014519056261343012,0.1161524500907441,0.8393829401088929
 Feb 2020,0.008541392904073587,0.02102496714848883,0.164257555847569,0.8061760840998686
 Mar 2020,0.004772004241781549,0.003181336161187699,0.1071049840933192,0.8849416755037116
+Apr 2020,0.0042780748663101605,0.0042780748663101605,0.006417112299465241,0.9850267379679144
 
 NonCumulative Downloads by CHOP Affiliates (vs Education) Over Time
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -123,6 +136,7 @@ Dec 2019,19,3,11,30
 Jan 2020,33,16,128,86
 Feb 2020,13,32,250,136
 Mar 2020,9,6,202,132
+Apr 2020,8,8,12,38
 
 Cumulative Downloads by CHOP Affiliates (vs Education) Over Time
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -132,6 +146,7 @@ Dec 2019,77,29,49,195
 Jan 2020,110,45,177,281
 Feb 2020,123,77,427,417
 Mar 2020,132,83,629,549
+Apr 2020,140,91,641,587
 
 Cumulative Downloads by CHOP Affiliates (vs Education) Over Time (Stacked)
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -141,6 +156,7 @@ Dec 2019,77,106,155,350
 Jan 2020,110,155,332,613
 Feb 2020,123,200,627,1044
 Mar 2020,132,215,844,1393
+Apr 2020,140,231,872,1459
 
 Downloads by CHOP Affiliates (vs Education) Over Time (%)
 ,The Children's Hospital of Philadelphia,Penn Medicine,University of Pennsylvania,Other
@@ -150,123 +166,137 @@ Dec 2019,0.30158730158730157,0.047619047619047616,0.1746031746031746,0.476190476
 Jan 2020,0.12547528517110265,0.060836501901140684,0.4866920152091255,0.3269961977186312
 Feb 2020,0.030162412993039442,0.07424593967517401,0.580046403712297,0.31554524361948955
 Mar 2020,0.025787965616045846,0.017191977077363897,0.5787965616045845,0.37822349570200575
+Apr 2020,0.12121212121212122,0.12121212121212122,0.18181818181818182,0.5757575757575758
 
 NonCumulative Downloads (Inst vs NonInst) Over Time
 ,Institutional,NonInstitutional,All
 Oct 2019,243,326,569
 Nov 2019,149,300,449
-Dec 2019,100,305,405
+Dec 2019,101,304,405
 Jan 2020,367,735,1102
 Feb 2020,563,959,1522
 Mar 2020,471,1415,1886
+Apr 2020,187,1683,1870
 
 Cumulative Downloads (Inst vs NonInst) Over Time
 ,Institutional,NonInstitutional,All
 Oct 2019,243,326,569
 Nov 2019,392,626,1018
-Dec 2019,492,931,1423
-Jan 2020,859,1666,2525
-Feb 2020,1422,2625,4047
-Mar 2020,1893,4040,5933
+Dec 2019,493,930,1423
+Jan 2020,860,1665,2525
+Feb 2020,1423,2624,4047
+Mar 2020,1894,4039,5933
+Apr 2020,2081,5722,7803
 
 Cumulative Downloads (Inst vs NonInst) Over Time (Stacked)
 ,Institutional,NonInstitutional,All
 Oct 2019,243,569,1138
 Nov 2019,392,1018,2036
-Dec 2019,492,1423,2846
-Jan 2020,859,2525,5050
-Feb 2020,1422,4047,8094
-Mar 2020,1893,5933,11866
+Dec 2019,493,1423,2846
+Jan 2020,860,2525,5050
+Feb 2020,1423,4047,8094
+Mar 2020,1894,5933,11866
+Apr 2020,2081,7803,15606
 
 NonCumulative Downloads by Institution Type Over Time
 ,Education,Government,Organization,Commercial,Military,Library
 Oct 2019,189,17,7,29,1,0
 Nov 2019,98,7,12,31,1,0
-Dec 2019,63,3,1,32,0,1
+Dec 2019,63,3,2,32,0,1
 Jan 2020,263,12,9,82,1,0
 Feb 2020,431,15,11,100,3,3
 Mar 2020,349,16,12,93,0,1
+Apr 2020,66,9,9,103,0,0
 
 NonCumulative Downloads by Institution Type Over Time (%)
 ,Education,Government,Organization,Commercial,Military,Library
 Oct 2019,0.7777777777777778,0.06995884773662552,0.02880658436213992,0.11934156378600823,0.00411522633744856,0.0
 Nov 2019,0.6577181208053692,0.04697986577181208,0.08053691275167785,0.2080536912751678,0.006711409395973154,0.0
-Dec 2019,0.63,0.03,0.01,0.32,0.0,0.01
+Dec 2019,0.6237623762376238,0.0297029702970297,0.019801980198019802,0.31683168316831684,0.0,0.009900990099009901
 Jan 2020,0.7166212534059946,0.0326975476839237,0.02452316076294278,0.22343324250681199,0.0027247956403269754,0.0
 Feb 2020,0.7655417406749556,0.02664298401420959,0.019538188277087035,0.17761989342806395,0.0053285968028419185,0.0053285968028419185
 Mar 2020,0.7409766454352441,0.03397027600849257,0.025477707006369428,0.19745222929936307,0.0,0.0021231422505307855
+Apr 2020,0.35294117647058826,0.0481283422459893,0.0481283422459893,0.5508021390374331,0.0,0.0
 
 Cumulative Downloads by Institution Type Over Time
 ,Education,Government,Organization,Commercial,Military,Library
 Oct 2019,189,17,7,29,1,0
 Nov 2019,287,24,19,60,2,0
-Dec 2019,350,27,20,92,2,1
-Jan 2020,613,39,29,174,3,1
-Feb 2020,1044,54,40,274,6,4
-Mar 2020,1393,70,52,367,6,5
+Dec 2019,350,27,21,92,2,1
+Jan 2020,613,39,30,174,3,1
+Feb 2020,1044,54,41,274,6,4
+Mar 2020,1393,70,53,367,6,5
+Apr 2020,1459,79,62,470,6,5
 
 Cumulative Downloads by Institution Type Over Time (Stacked)
 ,Education,Government,Organization,Commercial,Military,Library
 Oct 2019,189,206,213,242,243,243
 Nov 2019,287,311,330,390,392,392
-Dec 2019,350,377,397,489,491,492
-Jan 2020,613,652,681,855,858,859
-Feb 2020,1044,1098,1138,1412,1418,1422
-Mar 2020,1393,1463,1515,1882,1888,1893
+Dec 2019,350,377,398,490,492,493
+Jan 2020,613,652,682,856,859,860
+Feb 2020,1044,1098,1139,1413,1419,1423
+Mar 2020,1393,1463,1516,1883,1889,1894
+Apr 2020,1459,1538,1600,2070,2076,2081
 
 NonCumulative Downloads by Article Over Time
-,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,FDA Drug Regulation: Investigational New Drug Applications,Intellectual Property Protection for Biologics,Innate Biases,Equity Allocation in Startups,Other
-Oct 2019,12.0,9.0,13.0,12.0,23.0,12.0,6.0,8.0,474.0
-Nov 2019,19.0,10.0,6.0,52.0,13.0,8.0,33.0,21.0,287.0
-Dec 2019,40.0,17.0,22.0,17.0,12.0,23.0,24.0,47.0,208.0
-Jan 2020,139.0,36.0,62.0,32.0,45.0,41.0,44.0,77.0,626.0
-Feb 2020,178.0,116.0,55.0,79.0,79.0,65.0,46.0,25.0,879.0
-Mar 2020,285.0,135.0,138.0,78.0,81.0,92.0,57.0,24.0,996.0
+,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,Intellectual Property Protection for Biologics,FDA Drug Regulation: Investigational New Drug Applications,Innate Biases,Preclinical Animal Models,Other
+Oct 2019,12.0,9.0,13.0,12.0,12.0,23.0,6.0,nan,482.0
+Nov 2019,19.0,10.0,6.0,52.0,8.0,13.0,33.0,9.0,299.0
+Dec 2019,40.0,17.0,22.0,17.0,23.0,12.0,24.0,5.0,250.0
+Jan 2020,139.0,36.0,62.0,32.0,41.0,45.0,44.0,20.0,683.0
+Feb 2020,178.0,116.0,55.0,79.0,65.0,79.0,46.0,73.0,831.0
+Mar 2020,285.0,135.0,138.0,78.0,92.0,81.0,57.0,83.0,937.0
+Apr 2020,265.0,108.0,98.0,117.0,118.0,88.0,115.0,94.0,867.0
 
 Cumulative Downloads by Article Over Time
-,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,FDA Drug Regulation: Investigational New Drug Applications,Intellectual Property Protection for Biologics,Innate Biases,Equity Allocation in Startups,Other
-Oct 2019,12.0,9.0,13.0,12.0,23.0,12.0,6.0,8.0,474.0
-Nov 2019,31.0,19.0,19.0,64.0,36.0,20.0,39.0,29.0,761.0
-Dec 2019,71.0,36.0,41.0,81.0,48.0,43.0,63.0,76.0,969.0
-Jan 2020,210.0,72.0,103.0,113.0,93.0,84.0,107.0,153.0,1595.0
-Feb 2020,388.0,188.0,158.0,192.0,172.0,149.0,153.0,178.0,2474.0
-Mar 2020,673.0,323.0,296.0,270.0,253.0,241.0,210.0,202.0,3470.0
+,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,Intellectual Property Protection for Biologics,FDA Drug Regulation: Investigational New Drug Applications,Innate Biases,Preclinical Animal Models,Other
+Oct 2019,12.0,9.0,13.0,12.0,12.0,23.0,6.0,nan,482.0
+Nov 2019,31.0,19.0,19.0,64.0,20.0,36.0,39.0,nan,781.0
+Dec 2019,71.0,36.0,41.0,81.0,43.0,48.0,63.0,nan,1031.0
+Jan 2020,210.0,72.0,103.0,113.0,84.0,93.0,107.0,nan,1714.0
+Feb 2020,388.0,188.0,158.0,192.0,149.0,172.0,153.0,nan,2545.0
+Mar 2020,673.0,323.0,296.0,270.0,241.0,253.0,210.0,nan,3482.0
+Apr 2020,938.0,431.0,394.0,387.0,359.0,341.0,325.0,nan,4349.0
 
 Cumulative Downloads by Article Over Time (Stacked)
-,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,FDA Drug Regulation: Investigational New Drug Applications,Intellectual Property Protection for Biologics,Innate Biases,Equity Allocation in Startups,Other
-Oct 2019,12.0,21.0,34.0,46.0,69.0,81.0,87.0,95.0,569.0
-Nov 2019,31.0,50.0,69.0,133.0,169.0,189.0,228.0,257.0,1018.0
-Dec 2019,71.0,107.0,148.0,229.0,277.0,320.0,383.0,459.0,1428.0
-Jan 2020,210.0,282.0,385.0,498.0,591.0,675.0,782.0,935.0,2530.0
-Feb 2020,388.0,576.0,734.0,926.0,1098.0,1247.0,1400.0,1578.0,4052.0
-Mar 2020,673.0,996.0,1292.0,1562.0,1815.0,2056.0,2266.0,2468.0,5938.0
+,Orphan Drugs: Understanding the FDA Approval Process,"FDA Device Regulation: 510(k), PMA",Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,Writing Business Plans for a Life Science Startup or Clinical Program,Intellectual Property Protection for Biologics,FDA Drug Regulation: Investigational New Drug Applications,Innate Biases,Preclinical Animal Models,Other
+Oct 2019,12.0,21.0,34.0,46.0,58.0,81.0,87.0,nan,nan
+Nov 2019,31.0,50.0,69.0,133.0,153.0,189.0,228.0,nan,nan
+Dec 2019,71.0,107.0,148.0,229.0,272.0,320.0,383.0,nan,nan
+Jan 2020,210.0,282.0,385.0,498.0,582.0,675.0,782.0,nan,nan
+Feb 2020,388.0,576.0,734.0,926.0,1075.0,1247.0,1400.0,nan,nan
+Mar 2020,673.0,996.0,1292.0,1562.0,1803.0,2056.0,2266.0,nan,nan
+Apr 2020,938.0,1369.0,1763.0,2150.0,2509.0,2850.0,3175.0,nan,nan
 
 NonCumulative Downloads by Referral Source Over Time
-,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss5/4/,Other
-Oct 2019,20,110,8,5,7,300
-Nov 2019,110,54,3,28,2,152
-Dec 2019,220,17,8,3,0,96
-Jan 2020,359,29,50,2,65,443
-Feb 2020,523,32,13,37,8,658
-Mar 2020,688,26,26,24,17,756
+,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss3/4/,Other
+Oct 2019,20,110,8,5,3,304
+Nov 2019,110,54,3,28,3,151
+Dec 2019,220,17,8,3,5,91
+Jan 2020,359,29,50,2,3,505
+Feb 2020,523,32,13,37,48,618
+Mar 2020,688,26,26,24,29,744
+Apr 2020,1019,28,4,9,11,478
 
 Cumulative Downloads by Referral Source Over Time
-,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss5/4/,Other
-Oct 2019,20,110,8,5,7,300
-Nov 2019,130,164,11,33,9,452
-Dec 2019,350,181,19,36,9,548
-Jan 2020,709,210,69,38,74,991
-Feb 2020,1232,242,82,75,82,1649
-Mar 2020,1920,268,108,99,99,2405
+,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss3/4/,Other
+Oct 2019,20,110,8,5,3,304
+Nov 2019,130,164,11,33,6,455
+Dec 2019,350,181,19,36,11,546
+Jan 2020,709,210,69,38,14,1051
+Feb 2020,1232,242,82,75,62,1669
+Mar 2020,1920,268,108,99,91,2413
+Apr 2020,2939,296,112,108,102,2891
 
 Cumulative Downloads by Referral Source Over Time (Stacked)
-,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss5/4/,Other
-Oct 2019,20,130,138,143,150,450
-Nov 2019,130,294,305,338,347,799
-Dec 2019,350,531,550,586,595,1143
-Jan 2020,709,919,988,1026,1100,2091
-Feb 2020,1232,1474,1556,1631,1713,3362
-Mar 2020,1920,2188,2296,2395,2494,4899
+,www.google.com/,scholar.google.com/,repository.upenn.edu/ace/vol1/iss1/2/,repository.upenn.edu/ace/vol1/iss2/2/,repository.upenn.edu/ace/vol1/iss3/4/,Other
+Oct 2019,20,130,138,143,146,450
+Nov 2019,130,294,305,338,344,799
+Dec 2019,350,531,550,586,597,1143
+Jan 2020,709,919,988,1026,1040,2091
+Feb 2020,1232,1474,1556,1631,1693,3362
+Mar 2020,1920,2188,2296,2395,2486,4899
+Apr 2020,2939,3235,3347,3455,3557,6448
 
 Sections downloaded over time
 ,People,Finance,Academia,Ideation,IP/Reg
@@ -276,6 +306,7 @@ Dec 2019,57.0,136.0,10.0,25.0,182.0
 Jan 2020,162.0,209.0,132.0,129.0,470.0
 Feb 2020,114.0,231.0,140.0,77.0,960.0
 Mar 2020,200.0,277.0,72.0,183.0,1154.0
+Apr 2020,157.0,446.0,23.0,125.0,1119.0
 
 Sections downloaded over time (normalized)
 ,People,Finance,Academia,Ideation,IP/Reg
@@ -285,6 +316,7 @@ Dec 2019,0.13902439024390245,0.33170731707317075,0.024390243902439025,0.06097560
 Jan 2020,0.147005444646098,0.1896551724137931,0.11978221415607986,0.11705989110707804,0.426497277676951
 Feb 2020,0.07490144546649145,0.15177398160315375,0.09198423127463863,0.05059132720105125,0.6307490144546649
 Mar 2020,0.10604453870625663,0.14687168610816542,0.03817603393425239,0.09703075291622482,0.6118769883351007
+Apr 2020,0.0839572192513369,0.23850267379679144,0.01229946524064171,0.06684491978609626,0.5983957219251337
 
 Sections downloaded over time (balanced)
 ,People,Finance,Academia,Ideation,IP/Reg
@@ -294,6 +326,7 @@ Dec 2019,7.125,13.6,2.0,4.166666666666667,8.666666666666666
 Jan 2020,20.25,20.9,26.4,21.5,22.38095238095238
 Feb 2020,14.25,23.1,28.0,12.833333333333334,45.714285714285715
 Mar 2020,25.0,27.7,14.4,30.5,54.95238095238095
+Apr 2020,19.625,44.6,4.6,20.833333333333332,53.285714285714285
 
 Sections downloaded over time (normalized & balanced)
 ,People,Finance,Academia,Ideation,IP/Reg
@@ -303,138 +336,423 @@ Dec 2019,0.20037497070541363,0.3824701195219123,0.05624560581204593,0.1171783454
 Jan 2020,0.1817268861776458,0.18756009486976774,0.2369180145723382,0.19294459520095725,0.20085040917929103
 Feb 2020,0.1150143167361685,0.18644426081442053,0.22599304341141882,0.1035801448969003,0.368968234141092
 Mar 2020,0.16387813709576726,0.1815769759021101,0.09439380696716194,0.19993132725683604,0.36021975277812457
+Apr 2020,0.13729148101571545,0.31201019379877243,0.03218042357565814,0.14574467199120536,0.37277322961864867
 
 Most Downloaded Articles (Education)
-What is Academic Entrepreneurship?,58
-Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,54
-"FDA Device Regulation: 510(k), PMA",50
-Resources at Academic Entrepreneurship Centers,50
-Writing Business Plans for a Life Science Startup or Clinical Program,49
-I-Corps as a Training Tool for New Technology Development,46
-Identifying Unmet Needs: Problems that Need Solutions,46
-Intellectual Property: Ownership and Protection in a University Setting,44
-Does My Invention Already Exist? Conducting a Patent / Prior Art Search,38
-Overview of Device Development,38
-Building a Successful Startup Team,37
-Surgical Device Development,34
-The Promotion Process: Academic Entrepreneurship Career Tracks,34
-Preclinical Animal Models,31
-Intellectual Property: Commercializing in a University Setting,31
-FDA Drug Regulation: Investigational New Drug Applications,31
-Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,31
-Development Strategies for Animal Medical Therapeutics,26
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,71
+What is Academic Entrepreneurship?,66
+"FDA Device Regulation: 510(k), PMA",66
+Writing Business Plans for a Life Science Startup or Clinical Program,64
+FDA Drug Regulation: Investigational New Drug Applications,61
+Resources at Academic Entrepreneurship Centers,53
+Building a Successful Startup Team,50
+Orphan Drugs: Understanding the FDA Approval Process,49
+Preclinical Animal Models,48
+I-Corps as a Training Tool for New Technology Development,48
+Identifying Unmet Needs: Problems that Need Solutions,47
+Intellectual Property: Ownership and Protection in a University Setting,47
+Overview of Device Development,41
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,41
+SBIR/STTR Grants: Application Guidance,40
+The Promotion Process: Academic Entrepreneurship Career Tracks,39
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,38
+Surgical Device Development,37
+Intellectual Property: Commercializing in a University Setting,37
+Innate Biases,33
+Development Strategies for Animal Medical Therapeutics,30
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,28
+Handling Disruptive Innovation in Clinical and Research Settings,24
+Overview of Drug Development,22
+Negotiation Strategies,22
+Intellectual Property Protection for Biologics,22
 Careers in Academia and Industry:  Transitions and Challenges,21
-Handling Disruptive Innovation in Clinical and Research Settings,21
-Negotiation Strategies,19
-Conducting Insightful Market Research,18
-Rapid Prototyping Strategies,17
-A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,15
-Orphan Drugs: Understanding the FDA Approval Process,13
-Pediatric Medical Device Development Pathways,12
-Overview of Drug Development,12
-SBIR/STTR Grants: Application Guidance,9
-Strategic Planning and Costs of FDA Regulation,9
-Intellectual Property Protection for Biologics,9
-Digital Health: Software as a Medical Device,9
-Seeking Venture Capital Investment,9
-Working with the University Technology Transfer Office,9
-Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,8
-SBIR/STTR Grants: Introduction and Overview,8
-Clinical and Translational Science Awards,7
-Accelerators and Incubators,7
-Innate Biases,6
-Understanding Conflict of Interest for Academic Entrepreneurs,6
-Marketing in an Academic Institution,6
-Social Entrepreneurship in Healthcare,6
-Reimbursement Strategies and CPT Codes for Device Development,5
-Equity Allocation in Startups,5
-Angel Investors,4
-Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,4
-Startup Company Formation and Management,4
-Careers in Academia and Industry: Transitions and Challenges,4
-Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,1
-Department of Defense: SBIR/STTR Grants and Other Contracts,1
-Development of Radiographic Contrast Agents for Diagnostic Imaging,1
-Laws and Ethics in relation to Medical Entrepreneurship,1
+Digital Health: Software as a Medical Device,20
+Working with the University Technology Transfer Office,20
+Accelerators and Incubators,20
+Conducting Insightful Market Research,19
+Rapid Prototyping Strategies,19
+Startup Company Formation and Management,18
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,16
+Strategic Planning and Costs of FDA Regulation,16
+Pediatric Medical Device Development Pathways,16
+Seeking Venture Capital Investment,15
+SBIR/STTR Grants: Introduction and Overview,15
+Equity Allocation in Startups,15
+Social Entrepreneurship in Healthcare,14
+Clinical and Translational Science Awards,14
+Reimbursement Strategies and CPT Codes for Device Development,13
+Understanding Conflict of Interest for Academic Entrepreneurs,10
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,10
+Careers in Academia and Industry: Transitions and Challenges,9
+Angel Investors,8
+Marketing in an Academic Institution,7
+Department of Defense: SBIR/STTR Grants and Other Contracts,7
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,6
+Development of Radiographic Contrast Agents for Diagnostic Imaging,4
+Laws and Ethics in relation to Medical Entrepreneurship,3
+""
+Most Downloaded Articles over the past 3 months (Education)
+"FDA Device Regulation: 510(k), PMA",57
+Writing Business Plans for a Life Science Startup or Clinical Program,45
+Preclinical Animal Models,43
+FDA Drug Regulation: Investigational New Drug Applications,39
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,38
+Intellectual Property: Ownership and Protection in a University Setting,37
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,36
+Intellectual Property: Commercializing in a University Setting,34
+Orphan Drugs: Understanding the FDA Approval Process,32
+Building a Successful Startup Team,32
+Overview of Device Development,32
+Surgical Device Development,31
+SBIR/STTR Grants: Application Guidance,29
+What is Academic Entrepreneurship?,24
+Development Strategies for Animal Medical Therapeutics,24
+I-Corps as a Training Tool for New Technology Development,23
+The Promotion Process: Academic Entrepreneurship Career Tracks,22
+Careers in Academia and Industry:  Transitions and Challenges,21
+Innate Biases,20
+Intellectual Property Protection for Biologics,16
+Identifying Unmet Needs: Problems that Need Solutions,15
+Negotiation Strategies,15
+Resources at Academic Entrepreneurship Centers,14
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,12
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,12
+Pediatric Medical Device Development Pathways,11
+Reimbursement Strategies and CPT Codes for Device Development,9
+Social Entrepreneurship in Healthcare,9
+Conducting Insightful Market Research,9
+Working with the University Technology Transfer Office,8
+Handling Disruptive Innovation in Clinical and Research Settings,8
+Overview of Drug Development,7
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,7
+Digital Health: Software as a Medical Device,7
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,6
+Seeking Venture Capital Investment,6
+Department of Defense: SBIR/STTR Grants and Other Contracts,6
+Accelerators and Incubators,6
+Understanding Conflict of Interest for Academic Entrepreneurs,5
+Startup Company Formation and Management,5
+Strategic Planning and Costs of FDA Regulation,5
+Rapid Prototyping Strategies,5
+SBIR/STTR Grants: Introduction and Overview,4
+Laws and Ethics in relation to Medical Entrepreneurship,3
+Marketing in an Academic Institution,3
+Development of Radiographic Contrast Agents for Diagnostic Imaging,3
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,3
+Angel Investors,3
+Clinical and Translational Science Awards,2
+Careers in Academia and Industry: Transitions and Challenges,2
+Equity Allocation in Startups,1
 ""
 Most Downloaded Articles (Commercial)
-"FDA Device Regulation: 510(k), PMA",9
-Orphan Drugs: Understanding the FDA Approval Process,8
-Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,4
-Reimbursement Strategies and CPT Codes for Device Development,4
+Orphan Drugs: Understanding the FDA Approval Process,107
+"FDA Device Regulation: 510(k), PMA",49
+Intellectual Property Protection for Biologics,37
+FDA Drug Regulation: Investigational New Drug Applications,23
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,22
+Preclinical Animal Models,21
+Writing Business Plans for a Life Science Startup or Clinical Program,19
+Accelerators and Incubators,18
+Equity Allocation in Startups,17
+Overview of Drug Development,15
+Reimbursement Strategies and CPT Codes for Device Development,14
+Digital Health: Software as a Medical Device,13
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,9
+Strategic Planning and Costs of FDA Regulation,8
+Development of Radiographic Contrast Agents for Diagnostic Imaging,8
+Intellectual Property: Commercializing in a University Setting,7
+SBIR/STTR Grants: Application Guidance,7
+Identifying Unmet Needs: Problems that Need Solutions,7
+Innate Biases,7
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,6
+Department of Defense: SBIR/STTR Grants and Other Contracts,4
+Working with the University Technology Transfer Office,4
+Building a Successful Startup Team,4
 Careers in Academia and Industry:  Transitions and Challenges,3
+Overview of Device Development,3
+Surgical Device Development,3
+Pediatric Medical Device Development Pathways,3
+Rapid Prototyping Strategies,3
+Careers in Academia and Industry: Transitions and Challenges,3
+Startup Company Formation and Management,2
 Laws and Ethics in relation to Medical Entrepreneurship,2
-Department of Defense: SBIR/STTR Grants and Other Contracts,2
-Equity Allocation in Startups,2
+Angel Investors,2
+SBIR/STTR Grants: Introduction and Overview,2
+I-Corps as a Training Tool for New Technology Development,2
+Negotiation Strategies,2
+What is Academic Entrepreneurship?,2
+Seeking Venture Capital Investment,2
+Handling Disruptive Innovation in Clinical and Research Settings,1
 Conducting Insightful Market Research,1
-Pediatric Medical Device Development Pathways,1
-Identifying Unmet Needs: Problems that Need Solutions,1
-Preclinical Animal Models,1
-Development of Radiographic Contrast Agents for Diagnostic Imaging,1
-Strategic Planning and Costs of FDA Regulation,1
-Overview of Drug Development,1
-Intellectual Property Protection for Biologics,1
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,1
+Marketing in an Academic Institution,1
+Understanding Conflict of Interest for Academic Entrepreneurs,1
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,1
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,1
+Resources at Academic Entrepreneurship Centers,1
+Development Strategies for Animal Medical Therapeutics,1
+Clinical and Translational Science Awards,1
+""
+Most Downloaded Articles over the past 3 months (Commercial)
+Orphan Drugs: Understanding the FDA Approval Process,77
+"FDA Device Regulation: 510(k), PMA",35
+Intellectual Property Protection for Biologics,22
+Preclinical Animal Models,19
+FDA Drug Regulation: Investigational New Drug Applications,19
+Writing Business Plans for a Life Science Startup or Clinical Program,13
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,11
+Accelerators and Incubators,11
+Overview of Drug Development,10
+Reimbursement Strategies and CPT Codes for Device Development,10
+Intellectual Property: Commercializing in a University Setting,5
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,5
+Digital Health: Software as a Medical Device,5
+SBIR/STTR Grants: Application Guidance,5
+Strategic Planning and Costs of FDA Regulation,5
+Innate Biases,4
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,4
+Development of Radiographic Contrast Agents for Diagnostic Imaging,4
+Equity Allocation in Startups,4
+Department of Defense: SBIR/STTR Grants and Other Contracts,3
+Identifying Unmet Needs: Problems that Need Solutions,3
+Working with the University Technology Transfer Office,3
+Careers in Academia and Industry:  Transitions and Challenges,3
+Startup Company Formation and Management,2
+Laws and Ethics in relation to Medical Entrepreneurship,2
+Pediatric Medical Device Development Pathways,2
+Angel Investors,1
+Handling Disruptive Innovation in Clinical and Research Settings,1
+Conducting Insightful Market Research,1
+What is Academic Entrepreneurship?,1
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,1
+Seeking Venture Capital Investment,1
+Building a Successful Startup Team,1
+Marketing in an Academic Institution,1
+Overview of Device Development,1
+Surgical Device Development,1
+""
+Most Downloaded Articles (NonInstitutional)
+Orphan Drugs: Understanding the FDA Approval Process,761.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,353.0
+"FDA Device Regulation: 510(k), PMA",310.0
+Writing Business Plans for a Life Science Startup or Clinical Program,301.0
+Intellectual Property Protection for Biologics,285.0
+Innate Biases,280.0
+FDA Drug Regulation: Investigational New Drug Applications,251.0
+SBIR/STTR Grants: Application Guidance,222.0
+Preclinical Animal Models,209.0
+Accelerators and Incubators,197.0
+Equity Allocation in Startups,196.0
+Reimbursement Strategies and CPT Codes for Device Development,168.0
+Overview of Drug Development,121.0
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,114.0
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,100.0
+Building a Successful Startup Team,93.0
+Startup Company Formation and Management,90.0
+Social Entrepreneurship in Healthcare,81.0
+Digital Health: Software as a Medical Device,80.0
+Identifying Unmet Needs: Problems that Need Solutions,77.0
+Intellectual Property: Commercializing in a University Setting,76.0
+Working with the University Technology Transfer Office,76.0
+Seeking Venture Capital Investment,71.0
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,69.0
+Strategic Planning and Costs of FDA Regulation,67.0
+Development of Radiographic Contrast Agents for Diagnostic Imaging,65.0
+I-Corps as a Training Tool for New Technology Development,64.0
+Rapid Prototyping Strategies,64.0
+What is Academic Entrepreneurship?,64.0
+Negotiation Strategies,59.0
+Resources at Academic Entrepreneurship Centers,58.0
+Department of Defense: SBIR/STTR Grants and Other Contracts,49.0
+Laws and Ethics in relation to Medical Entrepreneurship,47.0
+Pediatric Medical Device Development Pathways,47.0
+The Promotion Process: Academic Entrepreneurship Career Tracks,47.0
+Conducting Insightful Market Research,46.0
+Overview of Device Development,41.0
+Careers in Academia and Industry:  Transitions and Challenges,39.0
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,38.0
+Surgical Device Development,37.0
+Development Strategies for Animal Medical Therapeutics,37.0
+Intellectual Property: Ownership and Protection in a University Setting,36.0
+SBIR/STTR Grants: Introduction and Overview,34.0
+Angel Investors,34.0
+The Promotion Process:  Academic Entrepreneurship Career Tracks,33.0
+Handling Disruptive Innovation in Clinical and Research Settings,30.0
+Careers in Academia and Industry: Transitions and Challenges,28.0
+Understanding Conflict of Interest for Academic Entrepreneurs,26.0
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,16.0
+Clinical and Translational Science Awards,16.0
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,11.0
+Marketing in an Academic Institution,11.0
+Draft - Forming and Maintaining Meaningful Partnerships: Academic Scientists and Corporations,2.0
+""
+Most Downloaded Articles over the past 3 months (NonInstitutional)
+Orphan Drugs: Understanding the FDA Approval Process,604.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,273.0
+"FDA Device Regulation: 510(k), PMA",263.0
+Intellectual Property Protection for Biologics,223.0
+Writing Business Plans for a Life Science Startup or Clinical Program,213.0
+SBIR/STTR Grants: Application Guidance,201.0
+Innate Biases,189.0
+FDA Drug Regulation: Investigational New Drug Applications,188.0
+Preclinical Animal Models,184.0
+Reimbursement Strategies and CPT Codes for Device Development,144.0
+Accelerators and Incubators,107.0
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,81.0
+Overview of Drug Development,80.0
+Equity Allocation in Startups,70.0
+Startup Company Formation and Management,68.0
+Social Entrepreneurship in Healthcare,66.0
+Intellectual Property: Commercializing in a University Setting,63.0
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,60.0
+Working with the University Technology Transfer Office,53.0
+Digital Health: Software as a Medical Device,51.0
+Development of Radiographic Contrast Agents for Diagnostic Imaging,49.0
+Laws and Ethics in relation to Medical Entrepreneurship,47.0
+Identifying Unmet Needs: Problems that Need Solutions,47.0
+Strategic Planning and Costs of FDA Regulation,47.0
+Building a Successful Startup Team,43.0
+Rapid Prototyping Strategies,40.0
+Negotiation Strategies,39.0
+Careers in Academia and Industry:  Transitions and Challenges,39.0
+Conducting Insightful Market Research,36.0
+Seeking Venture Capital Investment,36.0
+Department of Defense: SBIR/STTR Grants and Other Contracts,33.0
+The Promotion Process:  Academic Entrepreneurship Career Tracks,33.0
+Intellectual Property: Ownership and Protection in a University Setting,32.0
+Pediatric Medical Device Development Pathways,31.0
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,29.0
+I-Corps as a Training Tool for New Technology Development,27.0
+Overview of Device Development,27.0
+Surgical Device Development,26.0
+SBIR/STTR Grants: Introduction and Overview,25.0
+What is Academic Entrepreneurship?,25.0
+Development Strategies for Animal Medical Therapeutics,25.0
+The Promotion Process: Academic Entrepreneurship Career Tracks,22.0
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,21.0
+Understanding Conflict of Interest for Academic Entrepreneurs,20.0
+Resources at Academic Entrepreneurship Centers,18.0
+Angel Investors,14.0
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,10.0
+Clinical and Translational Science Awards,8.0
+Handling Disruptive Innovation in Clinical and Research Settings,8.0
+Careers in Academia and Industry: Transitions and Challenges,7.0
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,7.0
+Marketing in an Academic Institution,5.0
 ""
 Top 50 Most Downloaded Articles
-Orphan Drugs: Understanding the FDA Approval Process,673.0
-"FDA Device Regulation: 510(k), PMA",323.0
-Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,296.0
-Writing Business Plans for a Life Science Startup or Clinical Program,270.0
-FDA Drug Regulation: Investigational New Drug Applications,253.0
-Intellectual Property Protection for Biologics,241.0
-Innate Biases,210.0
-Equity Allocation in Startups,202.0
-Preclinical Animal Models,190.0
-Accelerators and Incubators,182.0
-Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,181.0
-SBIR/STTR Grants: Application Guidance,162.0
-Building a Successful Startup Team,133.0
-Does My Invention Already Exist? Conducting a Patent / Prior Art Search,126.0
-What is Academic Entrepreneurship?,126.0
-Identifying Unmet Needs: Problems that Need Solutions,112.0
-Resources at Academic Entrepreneurship Centers,111.0
-Overview of Drug Development,111.0
-I-Corps as a Training Tool for New Technology Development,108.0
-Intellectual Property: Commercializing in a University Setting,107.0
-Reimbursement Strategies and CPT Codes for Device Development,106.0
-Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,105.0
-Digital Health: Software as a Medical Device,101.0
-The Promotion Process: Academic Entrepreneurship Career Tracks,87.0
-Overview of Device Development,81.0
-Negotiation Strategies,80.0
-Intellectual Property: Ownership and Protection in a University Setting,76.0
-Surgical Device Development,73.0
-Working with the University Technology Transfer Office,71.0
-Strategic Planning and Costs of FDA Regulation,70.0
-Development Strategies for Animal Medical Therapeutics,65.0
+Orphan Drugs: Understanding the FDA Approval Process,938.0
+"FDA Device Regulation: 510(k), PMA",431.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,394.0
+Writing Business Plans for a Life Science Startup or Clinical Program,387.0
+Intellectual Property Protection for Biologics,359.0
+FDA Drug Regulation: Investigational New Drug Applications,341.0
+Innate Biases,325.0
+Preclinical Animal Models,284.0
+SBIR/STTR Grants: Application Guidance,278.0
+Accelerators and Incubators,240.0
+Equity Allocation in Startups,229.0
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,198.0
+Reimbursement Strategies and CPT Codes for Device Development,197.0
+Overview of Drug Development,159.0
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,156.0
+Building a Successful Startup Team,147.0
+Identifying Unmet Needs: Problems that Need Solutions,133.0
+What is Academic Entrepreneurship?,133.0
+Intellectual Property: Commercializing in a University Setting,126.0
+Resources at Academic Entrepreneurship Centers,115.0
+Digital Health: Software as a Medical Device,115.0
+I-Corps as a Training Tool for New Technology Development,114.0
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,112.0
+Startup Company Formation and Management,110.0
+Working with the University Technology Transfer Office,100.0
+Social Entrepreneurship in Healthcare,95.0
+Strategic Planning and Costs of FDA Regulation,94.0
+Seeking Venture Capital Investment,89.0
+The Promotion Process: Academic Entrepreneurship Career Tracks,89.0
+Rapid Prototyping Strategies,87.0
+Overview of Device Development,85.0
+Intellectual Property: Ownership and Protection in a University Setting,84.0
+Negotiation Strategies,84.0
+Development of Radiographic Contrast Agents for Diagnostic Imaging,80.0
+Surgical Device Development,77.0
+Pediatric Medical Device Development Pathways,70.0
+Development Strategies for Animal Medical Therapeutics,68.0
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,68.0
+Conducting Insightful Market Research,66.0
+Department of Defense: SBIR/STTR Grants and Other Contracts,65.0
 Careers in Academia and Industry:  Transitions and Challenges,63.0
-Conducting Insightful Market Research,61.0
-Startup Company Formation and Management,60.0
-Pediatric Medical Device Development Pathways,59.0
-Seeking Venture Capital Investment,58.0
-Department of Defense: SBIR/STTR Grants and Other Contracts,56.0
-A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,56.0
-Rapid Prototyping Strategies,54.0
-Handling Disruptive Innovation in Clinical and Research Settings,53.0
-Development of Radiographic Contrast Agents for Diagnostic Imaging,52.0
-Social Entrepreneurship in Healthcare,52.0
-Careers in Academia and Industry: Transitions and Challenges,44.0
-SBIR/STTR Grants: Introduction and Overview,41.0
-Other,37.0
-Angel Investors,36.0
+Handling Disruptive Innovation in Clinical and Research Settings,55.0
+Laws and Ethics in relation to Medical Entrepreneurship,52.0
+SBIR/STTR Grants: Introduction and Overview,52.0
+Careers in Academia and Industry: Transitions and Challenges,46.0
+Angel Investors,44.0
+Other,42.0
+Understanding Conflict of Interest for Academic Entrepreneurs,38.0
+Clinical and Translational Science Awards,38.0
 The Promotion Process:  Academic Entrepreneurship Career Tracks,33.0
-Clinical and Translational Science Awards,30.0
-Laws and Ethics in relation to Medical Entrepreneurship,23.0
-Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,19.0
-Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,19.0
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,23.0
+""
+Top 50 Most Downloaded Articles over the past 3 months
+Orphan Drugs: Understanding the FDA Approval Process,728.0
+"FDA Device Regulation: 510(k), PMA",359.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,291.0
+Intellectual Property Protection for Biologics,275.0
+Writing Business Plans for a Life Science Startup or Clinical Program,274.0
+Preclinical Animal Models,250.0
+FDA Drug Regulation: Investigational New Drug Applications,248.0
+SBIR/STTR Grants: Application Guidance,242.0
+Innate Biases,218.0
+Reimbursement Strategies and CPT Codes for Device Development,165.0
+Accelerators and Incubators,125.0
+Does My Invention Already Exist? Conducting a Patent / Prior Art Search,123.0
+Intellectual Property: Commercializing in a University Setting,107.0
+Human-Centered Design: Understanding Customers’ Needs Through Discovery and Interviewing,103.0
+Overview of Drug Development,98.0
+Building a Successful Startup Team,76.0
+Equity Allocation in Startups,76.0
+Startup Company Formation and Management,75.0
+Social Entrepreneurship in Healthcare,75.0
+Intellectual Property: Ownership and Protection in a University Setting,70.0
+Identifying Unmet Needs: Problems that Need Solutions,66.0
+Working with the University Technology Transfer Office,64.0
+Digital Health: Software as a Medical Device,63.0
+Careers in Academia and Industry:  Transitions and Challenges,63.0
+Overview of Device Development,60.0
+Development of Radiographic Contrast Agents for Diagnostic Imaging,58.0
+Strategic Planning and Costs of FDA Regulation,58.0
+Surgical Device Development,58.0
+Negotiation Strategies,54.0
+Laws and Ethics in relation to Medical Entrepreneurship,52.0
+I-Corps as a Training Tool for New Technology Development,50.0
+What is Academic Entrepreneurship?,50.0
+Development Strategies for Animal Medical Therapeutics,49.0
+Conducting Insightful Market Research,46.0
+Rapid Prototyping Strategies,45.0
+Department of Defense: SBIR/STTR Grants and Other Contracts,45.0
+Pediatric Medical Device Development Pathways,45.0
+The Promotion Process: Academic Entrepreneurship Career Tracks,44.0
+Seeking Venture Capital Investment,43.0
+Intrapreneurship:  Strategic Approaches for Managing Disruptive Innovation in Clinical and Research Projects,42.0
+A Seat at the Table: Special Considerations for Women and Underrepresented Groups in Academic Entrepreneurship,33.0
+The Promotion Process:  Academic Entrepreneurship Career Tracks,33.0
+Resources at Academic Entrepreneurship Centers,32.0
+SBIR/STTR Grants: Introduction and Overview,29.0
+Understanding Conflict of Interest for Academic Entrepreneurs,25.0
+Other,19.0
+Angel Investors,18.0
+Handling Disruptive Innovation in Clinical and Research Settings,17.0
+Forming and Maintaining Meaningful Partnerships Between Academic Scientists and Corporations,14.0
+Nonprofit and Foundation Sponsored Research: Developing New Models of Collaboration for Research and Development,14.0
+Clinical and Translational Science Awards,11.0
 ""
 Top 8 Most Downloaded Articles
-Other,3470.0
-Orphan Drugs: Understanding the FDA Approval Process,673.0
-"FDA Device Regulation: 510(k), PMA",323.0
-Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,296.0
-Writing Business Plans for a Life Science Startup or Clinical Program,270.0
-FDA Drug Regulation: Investigational New Drug Applications,253.0
-Intellectual Property Protection for Biologics,241.0
-Innate Biases,210.0
-Equity Allocation in Startups,202.0
+Other,4349.0
+Orphan Drugs: Understanding the FDA Approval Process,938.0
+"FDA Device Regulation: 510(k), PMA",431.0
+Developing In Vitro Diagnostics for Commercialization and Clinical Implementation,394.0
+Writing Business Plans for a Life Science Startup or Clinical Program,387.0
+Intellectual Property Protection for Biologics,359.0
+FDA Drug Regulation: Investigational New Drug Applications,341.0
+Innate Biases,325.0
+Preclinical Animal Models,284.0

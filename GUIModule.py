@@ -114,6 +114,10 @@ class GUIModule:
         plt.ylabel("Downloads")
         plt.show()
 
+    def plotMostDownloadedArticlesOverTime(self, cutoff=10,cumulative=False,stacked=False):
+        articles = self.d.totalDownloadsByArticleOverTime(cutoff=cutoff)
+        self.plotElementsOverTimeGeneral(articles,cumulative=cumulative,stacked=stacked)
+
     def printMostDownloadedArticles(self,cutoff=10):
         articles = self.d.totalDownloadsByArticle(cutoff)
         names = []
@@ -144,6 +148,18 @@ class GUIModule:
         y_pos = np.arange(len(names))
         plt.bar(y_pos, vals, align='center', alpha=0.5)
         plt.ylabel("Downloads ("+type+")")
+        plt.show()
+
+        for n in names:
+            print(n)
+
+    def printMostDownloadedArticlesNonInstitutional(self):
+        education = self.d.mostDownloadedArticlesNonInstitutional()
+        names = self.column(education, 0)
+        vals = self.column(education, 1)
+        y_pos = np.arange(len(names))
+        plt.bar(y_pos, vals, align='center', alpha=0.5)
+        plt.ylabel("Downloads (NonInstitutional)")
         plt.show()
 
         for n in names:
