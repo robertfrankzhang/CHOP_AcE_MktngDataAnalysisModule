@@ -20,3 +20,4 @@ from GUIModule import *
 
 e = ExportModule()
 e.exportAll()
+e.exportArticles()
